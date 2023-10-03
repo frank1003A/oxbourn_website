@@ -10,9 +10,12 @@ import {
   chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Image from "next/image";
+import Link from "next/link";
 import { ReactNode } from "react";
 import { BiMailSend } from "react-icons/bi";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import logo from "../../public/assets/logo.png";
 
 const Logo = (props: any) => {
   return (
@@ -87,7 +90,18 @@ export default function LargeWithNewsletter() {
         >
           <Stack spacing={6}>
             <Box>
-              <Logo color={useColorModeValue("gray.700", "white")} />
+              <Link href={"/"}>
+                <Image
+                  style={{
+                    filter:
+                      "invert(44%) sepia(97%) saturate(5005%) hue-rotate(237deg) brightness(99%) contrast(106%);",
+                  }}
+                  src={logo.src}
+                  height={150}
+                  width={150}
+                  alt={"oxbourn-logo"}
+                />
+              </Link>
             </Box>
             <Text fontSize={"sm"}>
               © 2022 Chakra Templates. All rights reserved
@@ -152,10 +166,10 @@ export default function LargeWithNewsletter() {
                 }}
               />
               <IconButton
-                bg={useColorModeValue("green.400", "green.800")}
+                bg={useColorModeValue("#694fff", "green.800")}
                 color={useColorModeValue("white", "gray.800")}
                 _hover={{
-                  bg: "green.600",
+                  bg: "#694fff",
                 }}
                 aria-label="Subscribe"
                 icon={<BiMailSend />}
