@@ -5,7 +5,7 @@ import SingleBlog from "../blog/SingleBlog";
 const LatestArticle = () => {
   return (
     <Container
-      py={{ sm: 5, md: 20, lg: 36 }}
+      py={{ sm: 10, md: 20, lg: 36 }}
       px={{ sm: 5, md: 10, xl: 32, lg: 16 }}
       margin={0}
       width={"100%"}

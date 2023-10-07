@@ -73,6 +73,7 @@ export default function WithSubnavigation() {
         px={{ base: 5, sm: 5, md: 10, lg: 16, xl: 32 }}
         h={{ base: "50px", sm: "50px" }}
         align={"center"}
+        justify={{ base: "center", sm: "center" }}
         bgColor={"brand.primary"}
         color={"white"}
         fontSize={{ base: 14, sm: 14, md: 16, lg: 16 }}
@@ -80,32 +81,6 @@ export default function WithSubnavigation() {
         transition={"all 0.2s ease-in-out"}
         overflowX={"hidden"}
       >
-        <Button
-          as={"a"}
-          display={{
-            base: "none",
-            sm: "inline-flex",
-            md: "none",
-            lg: "none",
-          }}
-          fontSize={"16px"}
-          fontWeight={600}
-          padding={"15px 20px"}
-          color={"brand.primary"}
-          textTransform={"capitalize"}
-          bg={"white"}
-          border={"1px"}
-          borderColor={"brand.primary"}
-          borderRadius={5}
-          transition={".3s"}
-          href={"#"}
-          _hover={{
-            bg: offset ? "" : "brand.primary",
-            color: isOffset ? "" : "white",
-          }}
-        >
-          Contact us
-        </Button>
         <Flex
           align={"center"}
           display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}
@@ -123,7 +98,11 @@ export default function WithSubnavigation() {
             </Flex>
           </Link>
         </Flex>
-        <Stack direction={"row"} ml="auto" spacing={6}>
+        <Stack
+          direction={"row"}
+          ml={{ base: "none", sm: "none", md: "auto", lg: "auto" }}
+          spacing={6}
+        >
           <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />
           </SocialButton>
