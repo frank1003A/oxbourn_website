@@ -1,10 +1,10 @@
-import LargeWithNewsletter from "@/components/Footer";
-import WithSubnavigation from "@/components/Navbar";
+import LargeWithNewsletter from "@/components/UI/Footer";
+import WithSubnavigation from "@/components/UI/Navbar";
 import { Inter } from "next/font/google";
 import React from "react";
 import CustomHead from "./CustomHead";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 /**const poppins = Poppins({
   subsets: ["latin"],
