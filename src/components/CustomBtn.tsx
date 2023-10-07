@@ -35,22 +35,8 @@ const CustomBtn = ({ children, ...rest }: CustomBtnProps) => {
       pos={"relative"}
       transition={"0.3s"}
       zIndex={1}
-      color={isOver ? "#694fff" : "white"}
-      _before={{
-        content: `""`,
-        pos: "absolute",
-        h: isOver ? "100%" : "0%",
-        w: isOver ? "100%" : "0%",
-        left: 0,
-        top: 0,
-        opacity: isOver ? 1 : 0,
-        borderRadius: "inherit",
-        border: "1px solid",
-        borderColor: "#694fff",
-        zIndex: -1,
-        bg: "#fff",
-        transition: "0.3s",
-      }}
+      color={"white"}
+      colorScheme="orange"
       {...rest}
     >
       {children}
@@ -69,6 +55,6 @@ export default CustomBtn;
         bottom: 0,
         borderRadius: "5px",
         zIndex: -1,
-        bg: "#694fff",
+        bg: "brand.primary",
         transition: "0.5s",
       }} */
