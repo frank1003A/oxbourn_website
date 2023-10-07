@@ -21,7 +21,7 @@ const Stats = () => {
       bgSize={"cover"}
       bgColor={"brand.primary"}
       py={{ base: 5, sm: 30, md: 30, lg: 10 }}
-      px={{ base: 5, sm: 10, md: 10, xl: 32, lg: 16 }}
+      px={{ base: 5, sm: 5, md: 10, xl: 32, lg: 16 }}
       margin={0}
       width={"100%"}
       pos={"relative"}

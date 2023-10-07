@@ -92,10 +92,10 @@ export default function Hero() {
         </Box>
         {/** text wrap */}
         <Stack
-          textAlign={{ base: "left", sm: "left", md: "center", lg: "left" }}
+          textAlign={{ base: "left", sm: "center", md: "center", lg: "left" }}
           align={{
-            base: "flex-start",
-            sm: "flex-start",
+            base: "center",
+            sm: "center",
             md: "center",
             lg: "flex-start",
           }}
@@ -104,8 +104,8 @@ export default function Hero() {
           margin={0}
           width={"100%"}
           spacing={{ base: 8, sm: 8, md: 5 }}
-          py={{ base: 5, sm: 20, md: 20, lg: 32 }}
-          px={{ base: 5, sm: 10, md: 20, xl: 32, lg: 16 }}
+          py={{ base: 5, sm: 10, md: 20, lg: 32 }}
+          px={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
           zIndex={10}
         >
           <Flex

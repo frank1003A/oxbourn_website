@@ -16,8 +16,8 @@ import SectionTag from "../SectionTag";
 const About = () => {
   return (
     <Container
-      py={{ base: 5, sm: 20, md: 20, lg: 36 }}
-      px={{ base: 5, sm: 10, md: 20, xl: 32, lg: 16 }}
+      py={{ base: 5, sm: 10, md: 20, lg: 36 }}
+      px={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
       margin={0}
       width={"100%"}
       pos={"relative"}

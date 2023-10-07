@@ -71,6 +71,7 @@ export default function WithSubnavigation() {
       <Flex
         py={"10px"}
         px={{ base: 5, sm: 5, md: 10, lg: 16, xl: 32 }}
+        h={{ base: "50px", sm: "50px" }}
         align={"center"}
         bgColor={"brand.primary"}
         color={"white"}
@@ -138,14 +139,15 @@ export default function WithSubnavigation() {
         bg={isOffset ? "brand.primary" : "white"}
         //color={isOffset ? "white" : "gray.600"}
         py={{ base: 2 }}
-        px={{ base: 5, sm: 10, md: 10, lg: 16, xl: 32 }}
+        px={{ base: 5, sm: 5, md: 10, lg: 16, xl: 32 }}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
         position={"sticky"}
         top={0}
+        h={"60px"}
         direction={"row"}
         transition={"all 0.3s ease-in-out"}
-        minHeight={{ base: "80px", sm: "80px", md: "80px", lg: "100px" }}
+        minHeight={{ base: "60px", sm: "60px", md: "80px", lg: "100px" }}
         zIndex={20}
       >
         <Flex
@@ -168,8 +170,13 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex
-          flex={{ base: 1 }}
-          justify={{ base: "start", sm: "start", md: "center", lg: "start" }}
+          flex={1}
+          justify={{
+            base: "space-between",
+            sm: "space-between",
+            md: "center",
+            lg: "start",
+          }}
           marginLeft={{ md: "10px", lg: "auto" }}
         >
           <Link href={"/"}>

@@ -86,7 +86,7 @@ const Portfolio = () => {
     <Container
       as={"section"}
       py={{ base: 5, md: 20, lg: "65px" }}
-      px={{ base: 5, sm: 10, md: 10, xl: 32, lg: 16 }}
+      px={{ base: 5, sm: 5, md: 10, xl: 32, lg: 16 }}
       margin={0}
       width={"100%"}
       pos={"relative"}
