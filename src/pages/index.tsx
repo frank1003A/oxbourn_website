@@ -6,6 +6,8 @@ import Portfolio from "@/components/UI/Portfolio";
 import Services from "@/components/UI/Services";
 import Stats from "@/components/stats/Stats";
 import Customlayout from "@/layouts/Customlayout";
+import { FaArrowUp } from "react-icons/fa";
+import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
   return (
@@ -17,6 +19,17 @@ export default function Home() {
       <Portfolio />
       <ChooseUs />
       <LatestArticle />
+      <ScrollToTop
+        component={<FaArrowUp />}
+        smooth
+        style={{
+          backgroundColor: "#2F3C7E",
+          color: "white",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      />
     </Customlayout>
   );
 }
