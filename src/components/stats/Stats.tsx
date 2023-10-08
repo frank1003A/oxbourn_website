@@ -1,13 +1,34 @@
 import { Container, SimpleGrid } from "@chakra-ui/react";
+import { CountUp } from "countup.js";
+import { useEffect } from "react";
 import StatsCard from "./StatsCard";
 
 const Stats = () => {
   const stats = [
-    { stat: "100+", description: "brands joined" },
-    { stat: "350+", description: "marketing experts" },
-    { stat: "200+", description: "satisfied client" },
-    { stat: "310+", description: "successful campaigns" },
+    { stat: "100", description: "brands joined", id: "t100" },
+    { stat: "350", description: "marketing experts", id: "t350" },
+    { stat: "200", description: "satisfied client", id: "t200" },
+    { stat: "310", description: "successful campaigns", id: "t310" },
   ];
+
+  useEffect(() => {
+    const countUpElOne = new CountUp("t100", 100, {
+      enableScrollSpy: true,
+      scrollSpyOnce: true,
+    });
+    const countUpElTwo = new CountUp("t350", 350, {
+      enableScrollSpy: true,
+      scrollSpyOnce: true,
+    });
+    const countUpElThree = new CountUp("t200", 200, {
+      enableScrollSpy: true,
+      scrollSpyOnce: true,
+    });
+    const countUpElFour = new CountUp("t310", 310, {
+      enableScrollSpy: true,
+      scrollSpyOnce: true,
+    });
+  }, []);
   return (
     <Container
       minH={150}
@@ -39,6 +60,7 @@ const Stats = () => {
               key={stat.stat + index}
               stat={stat.stat}
               description={stat.description}
+              id={stat.id}
             />
           );
         })}

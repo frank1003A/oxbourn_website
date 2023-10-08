@@ -1,4 +1,4 @@
-import { Box, Button, HStack, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Button, HStack, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FaBlog } from "react-icons/fa";
 import BlogAuthor from "./BlogAuthor";
@@ -19,12 +19,19 @@ const SingleBlog = () => {
         display="flex"
         flex="1"
         flexDirection="column"
+        alignItems={{
+          base: "center",
+          sm: "center",
+          md: "flex-start",
+          lg: "flex-start",
+        }}
+        textAlign={{ base: "center", sm: "center", md: "start", lg: "start" }}
         justifyContent="flex-start"
         marginTop={{ base: "3", sm: "0", md: 2, lg: 5 }}
         fontFamily={"inherit"}
       >
         <BlogTags tags={["Engineering", "Product"]} />
-        <Heading marginTop="1" fontFamily={"inherit"}>
+        <Box w={"100%"}>
           <Text
             textDecoration="none"
             fontSize={30}
@@ -37,7 +44,7 @@ const SingleBlog = () => {
           >
             Navigating Uncertainty
           </Text>
-        </Heading>
+        </Box>
         <Box mt={"5px"}>
           <Text
             as="p"
