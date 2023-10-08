@@ -45,7 +45,12 @@ const ChooseUs = () => {
         <Stack
           w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
           h="100%"
-          align={"flex-start"}
+          align={{
+            base: "center",
+            sm: "center",
+            md: "center",
+            lg: "flex-start",
+          }}
           height={"auto"}
           pos={"relative"}
         >
@@ -54,22 +59,18 @@ const ChooseUs = () => {
             color={"brand.heading"}
             as="h3"
             fontSize={{ base: 30, sm: 30, md: 36 }}
+            textAlign={{
+              base: "center",
+              sm: "center",
+              md: "start",
+              lg: "start",
+            }}
             lineHeight={"1.2"}
             fontFamily={"inherit"}
             data-aos="fade-down"
             w={"100%"}
           >
-            We work with you to realize{" "}
-          </Heading>
-          <Heading
-            color={"brand.heading"}
-            fontFamily={"inherit"}
-            as="h2"
-            fontSize={{ base: 30, sm: 30, md: 36 }}
-            data-aos="fade-down"
-            w={"100%"}
-          >
-            your next outstanding design
+            We work with you to realize your next outstanding design
           </Heading>
           <Stack
             fontSize={"16px"}

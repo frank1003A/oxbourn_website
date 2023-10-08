@@ -1,18 +1,8 @@
-"use client";
-
-import {
-  Box,
-  Button,
-  Center,
-  Container,
-  Flex,
-  Heading,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { FaArrowRight, FaPlay } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import CustomBtn from "../CustomBtn";
+import SectionTag from "../SectionTag";
 
 export default function Hero() {
   return (
@@ -26,7 +16,7 @@ export default function Hero() {
         //bgColor={"#eee"}
         bgImage={"url('/assets/bgwp.png')"}
         bgRepeat={"no-repeat"}
-        bgSize={"cover"}
+        bgSize={"center"}
         pos={"relative"}
       >
         {/** hero img */}
@@ -104,20 +94,12 @@ export default function Hero() {
           margin={0}
           width={"100%"}
           spacing={{ base: 8, sm: 8, md: 5 }}
-          py={{ base: 5, sm: 10, md: 20, lg: 32 }}
+          py={{ base: 5, sm: 20, md: 20, lg: 32 }}
           px={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
           zIndex={10}
+          data-aos="fade-up"
         >
-          <Flex
-            as={"div"}
-            bg={"brand.primary"}
-            color={"white"}
-            borderRadius={"md"}
-            p={"2px 5px"}
-            data-aos="fade-up"
-          >
-            <Text alignSelf={"flex-start"}>Welcome to Oxbourn Consulting</Text>
-          </Flex>
+          <SectionTag title="welcome to oxbourn consulting" />
           <Heading
             fontFamily={"inherit"}
             fontWeight={600}
@@ -127,7 +109,6 @@ export default function Hero() {
             noOfLines={50}
             maxW={{ base: "none", sm: "none", md: "none", lg: "58%" }}
             textTransform={"capitalize"}
-            data-aos="fade-up"
           >
             Unlock your potential, Elevate
             <br />
@@ -151,8 +132,8 @@ export default function Hero() {
             spacing={3}
             align={"flex-start"}
             justify={{
-              base: "flex-start",
-              sm: "flex-start",
+              base: "center",
+              sm: "center",
               md: "center",
               lg: "flex-start",
             }}
@@ -171,19 +152,6 @@ export default function Hero() {
             >
               Get Started
             </CustomBtn>
-            <Button
-              variant={"solid"}
-              colorScheme="orange"
-              bg={"brand.primary"}
-              padding={"16px"}
-              height={"auto"}
-              fontWeight={500}
-              rounded={"full"}
-            >
-              <Center>
-                <FaPlay />
-              </Center>
-            </Button>
           </Stack>
         </Stack>
       </Container>

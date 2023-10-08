@@ -58,40 +58,58 @@ const About = () => {
         <Stack
           w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
           h="100%"
-          align={"flex-start"}
+          align={{
+            base: "center",
+            sm: "center",
+            md: "center",
+            lg: "flex-start",
+          }}
           height={"auto"}
           pos={"relative"}
         >
           <SectionTag title="about us" />
-          <Heading
-            color={"brand.heading"}
-            as="h3"
-            fontSize={{ base: 30, sm: 30, md: 36 }}
-            lineHeight={"1.2"}
-            fontFamily={"inherit"}
-            data-aos="fade-down"
-            w={"100%"}
-          >
-            10+ Years Of Experiences In{" "}
-          </Heading>
-          <Heading
-            color={"brand.heading"}
-            fontFamily={"inherit"}
-            as="h2"
-            fontSize={{ base: 30, sm: 30, md: 36 }}
-            data-aos="fade-down"
-          >
-            Business Development.
-          </Heading>
-          <Text
-            fontFamily={"inherit"}
-            margin={"25px 0 0 0"}
-            fontSize={"16px"}
-            color={"brand.text"}
-          >
-            Our track record speaks volumes, and we are dedicated to delivering
-            the same high level of service that our clients have come to trust.
-          </Text>
+          <Box data-aos="fade-down">
+            <Heading
+              color={"brand.heading"}
+              as="h3"
+              fontSize={{ base: 30, sm: 30, md: 36 }}
+              lineHeight={"1.2"}
+              fontFamily={"inherit"}
+              w={"100%"}
+              textAlign={{ base: "center", sm: "center" }}
+            >
+              10+ Years Of Experiences In
+            </Heading>
+          </Box>
+          <Box data-aos="fade-down">
+            <Heading
+              color={"brand.heading"}
+              fontFamily={"inherit"}
+              as="h2"
+              fontSize={{ base: 30, sm: 30, md: 36 }}
+              textAlign={{ base: "center", sm: "center" }}
+            >
+              Business Development.
+            </Heading>
+          </Box>
+          <Box data-aos="fade-right" data-aos-delay="0">
+            <Text
+              fontFamily={"inherit"}
+              margin={"25px 0 0 0"}
+              fontSize={"16px"}
+              color={"brand.text"}
+              textAlign={{
+                base: "center",
+                sm: "center",
+                md: "start",
+                lg: "start",
+              }}
+            >
+              Our track record speaks volumes, and we are dedicated to
+              delivering the same high level of service that our clients have
+              come to trust.
+            </Text>
+          </Box>
           <Stack
             fontSize={"16px"}
             mt={5}
@@ -103,7 +121,7 @@ const About = () => {
               align={"center"}
               gap={"10px"}
               data-aos="fade-right"
-              data-aos-delay="0"
+              data-aos-delay="2"
             >
               <Box as={"span"} fontSize={"2em"} color={"brand.primary"}>
                 <BiSolidCheckCircle />
@@ -114,7 +132,7 @@ const About = () => {
               align={"center"}
               gap={"10px"}
               data-aos="fade-right"
-              data-aos-delay="1"
+              data-aos-delay="4"
             >
               <Box as={"span"} fontSize={"2em"} color={"#ff6305"}>
                 <BiSolidCheckCircle />
@@ -125,7 +143,7 @@ const About = () => {
               align={"center"}
               gap={"10px"}
               data-aos="fade-right"
-              data-aos-delay="2"
+              data-aos-delay="6"
             >
               <Box as={"span"} fontSize={"2em"} color={"#31c5e7"}>
                 <BiSolidCheckCircle />

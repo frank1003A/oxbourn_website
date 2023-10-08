@@ -3,9 +3,11 @@ import { Stack, Text } from "@chakra-ui/react";
 const StatsCard = ({
   stat,
   description,
+  id,
 }: {
   stat: string;
   description: string;
+  id: string;
 }) => {
   return (
     <Stack align={"center"}>
@@ -15,6 +17,14 @@ const StatsCard = ({
         fontSize={"69px"}
         fontWeight={"700"}
         lineHeight={1}
+        id={id}
+        _after={{
+          content: `"+"`,
+          color: "white",
+          fontSize: "69px",
+          fontWeight: "700",
+          lineHeight: 1,
+        }}
       >
         {stat}
       </Text>
