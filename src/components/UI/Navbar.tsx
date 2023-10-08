@@ -79,7 +79,7 @@ export default function WithSubnavigation() {
         fontSize={{ base: 14, sm: 14, md: 16, lg: 16 }}
         fontWeight={400}
         transition={"all 0.2s ease-in-out"}
-        overflowX={"hidden"}
+        overflow={"hidden"}
       >
         <Flex
           align={"center"}
@@ -88,13 +88,13 @@ export default function WithSubnavigation() {
           <Link href={"#"}>
             <Flex direction={"row"} align={"center"} gap={1} mr={4}>
               <BiMailSend />
-              <Text noOfLines={1}>Example@example gmail.com</Text>
+              <Text noOfLines={1}>oxbournconsulting@gmail.com</Text>
             </Flex>
           </Link>
           <Link href={"#"}>
             <Flex direction={"row"} align={"center"} gap={1}>
               <BiSolidPhone />
-              <Text noOfLines={1}>+00884567000</Text>
+              <Text noOfLines={1}>+234805465678</Text>
             </Flex>
           </Link>
         </Flex>
@@ -119,7 +119,10 @@ export default function WithSubnavigation() {
         //color={isOffset ? "white" : "gray.600"}
         py={{ base: 2 }}
         px={{ base: 5, sm: 5, md: 10, lg: 16, xl: 32 }}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
+        //borderColor={useColorModeValue("gray.200", "gray.900")}
+        borderBottom={isOffset ? "none" : 1}
+        borderBottomStyle={"solid"}
+        borderBottomColor={"#eee"}
         align={"center"}
         position={"sticky"}
         top={0}
@@ -163,18 +166,30 @@ export default function WithSubnavigation() {
               align={"center"}
               justifyContent={"flex-start"}
               gap={"5px"}
-              fontSize={"35px"}
+              fontSize={{ base: "25px", sm: "25px", md: "35px", lg: "35px" }}
+              overflowY={"hidden"}
             >
-              <Box as={"span"} color={isOffset ? "white" : "brand.primary"}>
-                <BiSolidBriefcase />
-              </Box>
-              <Heading
-                color={isOffset ? "white" : ""}
+              <Box
+                height={{ base: "25px", sm: "25px", md: "25px", lg: "25px" }}
+                display={"block"}
+                width={{ base: "25px", sm: "25px", md: "25px", lg: "25px" }}
+                bgImage={
+                  isOffset
+                    ? "url('/assets/logo-white.png')"
+                    : "url('/assets/logo-blue.png')"
+                }
+                bgPos={"center"}
+                bgSize={"cover"}
+              />
+              <Box
+                as="span"
+                color={isOffset ? "white" : "blackAlpha.800"}
                 fontFamily={"inherit"}
                 fontWeight={600}
+                height={{ base: "30px", sm: "30px", md: "auto", lg: "auto" }}
               >
                 Oxbourn
-              </Heading>
+              </Box>
             </Flex>
           </Link>
 
@@ -312,7 +327,7 @@ const DesktopNav = ({
                   textDecoration: "none",
                   borderBottomColor: isOffset ? "white" : "brand.primary",
                 }}
-                transformOrigin={".5s"}
+                transition={".5s"}
                 onClick={() => handleClickScroll(navItem.href as string)}
               >
                 {navItem.label}
@@ -441,6 +456,13 @@ const MobileNav = ({
         align={"center"}
         justify={"center"}
         spacing={6}
+        pos={"sticky"}
+        bottom={0}
+        padding={"10px"}
+        bgColor={"white"}
+        borderTop={"1px"}
+        borderTopStyle={"solid"}
+        borderTopColor={"#eee"}
       >
         <SocialButton label={"Twitter"} href={"#"}>
           <FaTwitter />

@@ -1,4 +1,11 @@
-import { Container, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import { BiMailSend, BiServer } from "react-icons/bi";
 import { FaStackExchange } from "react-icons/fa";
 import CustomCard from "../CustomCard";
@@ -30,25 +37,29 @@ const Services = () => {
           mb={"35px"}
         >
           <SectionTag title="our services" />
-          <Heading
-            fontSize={36}
-            color={"brand.heading"}
-            lineHeight={"1.2"}
-            fontWeight={700}
-          >
-            We Provide The Best Service For You
-          </Heading>
-          <Text
-            fontSize={16}
-            w={{ base: "100%", sm: "100%", md: "100%", lg: "53%" }}
-            margin={"12px auto 0"}
-            fontWeight={400}
-            color={"brand.text"}
-          >
-            At Oxbourn Consulting, excellence is our commitment. Our dedicated
-            team goes above and beyond to deliver tailored solutions, ensuring
-            that you receive nothing less than the best service, every time.
-          </Text>
+          <Box data-aos="zoom-in-up">
+            <Heading
+              fontSize={36}
+              color={"brand.heading"}
+              lineHeight={"1.2"}
+              fontWeight={700}
+            >
+              We Provide The Best Service For You
+            </Heading>
+          </Box>
+          <Box data-aos="zoom-in-up">
+            <Text
+              fontSize={16}
+              w={{ base: "100%", sm: "100%", md: "100%", lg: "53%" }}
+              margin={"12px auto 0"}
+              fontWeight={400}
+              color={"brand.text"}
+            >
+              At Oxbourn Consulting, excellence is our commitment. Our dedicated
+              team goes above and beyond to deliver tailored solutions, ensuring
+              that you receive nothing less than the best service, every time.
+            </Text>
+          </Box>
         </Stack>
         <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3 }} gap={5}>
           <CustomCard

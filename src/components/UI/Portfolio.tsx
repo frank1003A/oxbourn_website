@@ -1,4 +1,5 @@
 import {
+  Box,
   Container,
   Flex,
   Heading,
@@ -95,25 +96,30 @@ const Portfolio = () => {
     >
       <Stack align={"center"} m={"auto"} textAlign={"center"} mb={"35px"}>
         <SectionTag title="portfolio" />
-        <Heading
-          fontSize={36}
-          color={"brand.heading"}
-          lineHeight={"1.2"}
-          fontWeight={700}
-          fontFamily={"inherit"}
-        >
-          Explore Our Success Stories
-        </Heading>
-        <Text
-          fontSize={16}
-          w={{ base: "100%", sm: "100%", md: "100%", lg: "53%" }}
-          margin={"12px auto 0"}
-          fontWeight={400}
-          color={"brand.text"}
-        >
-          Discover the tangible results of our expertise through a selection of
-          projects that showcase our commitment to excellence and innovation.
-        </Text>
+        <Box data-aos="zoom-in-up">
+          <Heading
+            fontSize={36}
+            color={"brand.heading"}
+            lineHeight={"1.2"}
+            fontWeight={700}
+            fontFamily={"inherit"}
+          >
+            Explore Our Success Stories
+          </Heading>
+        </Box>
+        <Box data-aos="zoom-in-up">
+          <Text
+            fontSize={16}
+            w={{ base: "100%", sm: "100%", md: "100%", lg: "53%" }}
+            margin={"12px auto 0"}
+            fontWeight={400}
+            color={"brand.text"}
+          >
+            Discover the tangible results of our expertise through a selection
+            of projects that showcase our commitment to excellence and
+            innovation.
+          </Text>
+        </Box>
       </Stack>
       <Stack align={"center"} h={"100%"} mb={"35px"}>
         <Flex
