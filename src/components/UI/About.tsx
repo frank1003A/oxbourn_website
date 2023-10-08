@@ -2,14 +2,15 @@ import {
   Box,
   Button,
   Center,
+  CircularProgress,
   Container,
   Flex,
   Heading,
+  Image,
   Stack,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import { BiSolidCheckCircle } from "react-icons/bi";
 import SectionTag from "../SectionTag";
 
@@ -37,23 +38,31 @@ const About = () => {
         >
           <Center>
             <Image
-              src="/assets/sd2.png"
+              src={"/assets/sd2.png"}
               alt="about-image"
-              height={450}
-              width={450}
+              fallback={<CircularProgress color="brand.primary" />}
+              loading="lazy"
+              maxHeight={450}
             />
-            <Box zIndex="1" width="80%" position="absolute" height="80%">
-              <Box
-                bgGradient={useColorModeValue(
-                  "radial(brand.primary 1px, transparent 1px)",
-                  "radial(brand.primary 1px, transparent 1px)"
-                )}
-                backgroundSize="20px 20px"
-                opacity="0.4"
-                height="100%"
-              />
-            </Box>
           </Center>
+          <Box
+            zIndex="-1"
+            position="absolute"
+            left={0}
+            right={0}
+            top={0}
+            bottom={0}
+          >
+            <Box
+              bgGradient={useColorModeValue(
+                "radial(brand.primary 1px, transparent 1px)",
+                "radial(brand.primary 1px, transparent 1px)"
+              )}
+              backgroundSize="20px 20px"
+              opacity="0.4"
+              height="100%"
+            />
+          </Box>
         </Box>
         <Stack
           w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}

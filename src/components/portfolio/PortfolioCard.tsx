@@ -50,8 +50,8 @@ const PortfolioCard = ({ img, category, alt }: PortfolioCardProps) => {
   }, []);
 
   return (
-    <motion.div layout>
-      <Box data-aos="zoom-in-up">
+    <motion.div layout style={{ width: "100%" }}>
+      <Box data-aos="zoom-in-up" w={"100%"}>
         <Card
           transition={"all 0.5s"}
           borderRadius={"0px"}
@@ -61,9 +61,9 @@ const PortfolioCard = ({ img, category, alt }: PortfolioCardProps) => {
           shadow={"none"}
           position={"relative"}
           zIndex={1}
-          maxW={{ base: "240px", sm: "300px", md: "none", lg: "none" }}
+          maxW={{ base: "240px", sm: "none", md: "none", lg: "none" }}
           maxH={{ base: "100%", sm: "none", md: "none", lg: "none" }}
-          w={350}
+          w={{ base: "100%", sm: "100%", md: 350, lg: 350 }}
           h={240}
           minH={"100px"}
           role="group"
