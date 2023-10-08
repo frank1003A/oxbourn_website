@@ -10,12 +10,16 @@ const BlogImageBox = () => {
       alignItems="center"
     >
       <Box
-        width={{ base: "100%", sm: "85%" }}
+        width={{ base: "100%", sm: "100%", md: "100%", lg: "100%" }}
         zIndex="2"
-        marginLeft={{ base: "0", sm: "5%" }}
-        marginTop="5%"
+        role="group"
+        padding={"20px"}
       >
-        <Box textDecoration="none" _hover={{ textDecoration: "none" }}>
+        <Box
+          overflow={"hidden"}
+          textDecoration="none"
+          _hover={{ textDecoration: "none" }}
+        >
           <Image
             borderRadius="lg"
             src={
@@ -24,6 +28,13 @@ const BlogImageBox = () => {
             alt="some good alt text"
             objectFit="contain"
             bgPosition={"center"}
+            transition={"all .5s"}
+            _groupHover={{
+              transform: "scale(1.2)",
+              _before: {
+                opacity: 1,
+              },
+            }}
           />
         </Box>
       </Box>
