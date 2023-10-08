@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
       });
-    }, 400); // Delay initialization by 100 milliseconds
+    }, 400); // Delay initialization by 400 milliseconds
 
     window.addEventListener("load", Aos.refresh);
   }, []);

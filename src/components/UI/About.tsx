@@ -2,15 +2,14 @@ import {
   Box,
   Button,
   Center,
-  CircularProgress,
   Container,
   Flex,
   Heading,
-  Image,
   Stack,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import { BiSolidCheckCircle } from "react-icons/bi";
 import SectionTag from "../SectionTag";
 
@@ -40,9 +39,8 @@ const About = () => {
             <Image
               src={"/assets/sd2.png"}
               alt="about-image"
-              fallback={<CircularProgress color="brand.primary" />}
-              loading="lazy"
-              maxHeight={450}
+              height={450}
+              width={450}
             />
           </Center>
           <Box
