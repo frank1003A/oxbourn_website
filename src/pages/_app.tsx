@@ -1,7 +1,6 @@
 import { theme } from "@/ChakraConfig";
 import "@/styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import "animate.css/animate.min.css";
 import Aos from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import type { AppProps } from "next/app";
