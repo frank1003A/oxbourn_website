@@ -121,7 +121,7 @@ export default function Hero() {
             noOfLines={50}
             maxW={{ base: "none", sm: "none", md: "none", lg: "50%" }}
             lineHeight={"1.7"}
-            mb={35}
+            mb={{ lg: 35 }}
           >
             Our unwavering commitment to excellence makes us your trusted
             partners in navigating complexity, crafting innovative solutions,
