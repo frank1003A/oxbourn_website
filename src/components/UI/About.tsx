@@ -27,6 +27,7 @@ const About = () => {
       <Flex
         direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
         gap={"2rem"}
+        h={"100%"}
       >
         <Box
           w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}

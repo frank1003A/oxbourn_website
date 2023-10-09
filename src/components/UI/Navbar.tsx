@@ -314,6 +314,7 @@ const DesktopNav = ({
             <PopoverTrigger>
               <Flex
                 align={"center"}
+                justify={"center"}
                 transition={".3s"}
                 borderBottom={4}
                 borderBottomStyle={"solid"}
