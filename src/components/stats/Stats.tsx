@@ -35,7 +35,7 @@ const Stats = () => {
       bgImage={{
         base: "/assets/bg-round.png",
         sm: "/assets/footer.png",
-        md: "/assets/bg-bottom.png",
+        md: "/assets/footer.png",
       }}
       bgPos={"center"}
       bgRepeat={"no-repeat"}
