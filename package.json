@@ -22,7 +22,8 @@
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
-    "react-scroll-to-top": "^3.0.0"
+    "react-scroll-to-top": "^3.0.0",
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "@types/node": "latest",
