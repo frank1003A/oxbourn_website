@@ -1,3 +1,4 @@
+import Loader from "@/components/Loader";
 import About from "@/components/UI/About";
 import ChooseUs from "@/components/UI/ChooseUs";
 import Hero from "@/components/UI/Hero";
@@ -6,7 +7,6 @@ import Portfolio from "@/components/UI/Portfolio";
 import Services from "@/components/UI/Services";
 import Stats from "@/components/stats/Stats";
 import Customlayout from "@/layouts/Customlayout";
-import { AbsoluteCenter, Box, Spinner, Stack, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import ScrollToTop from "react-scroll-to-top";
@@ -28,14 +28,7 @@ export default function Home() {
   return (
     <>
       {loading ? (
-        <Box width={"100%"} height={"100vh"}>
-          <AbsoluteCenter>
-            <Stack>
-              <Spinner size="xl" thickness="8px" color="brand.primary" />
-              <Text>Please wait...</Text>
-            </Stack>
-          </AbsoluteCenter>
-        </Box>
+        <Loader />
       ) : (
         <Customlayout>
           <Hero />

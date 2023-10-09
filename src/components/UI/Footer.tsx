@@ -63,6 +63,10 @@ export default function LargeWithNewsletter() {
     <Box
       bg={useColorModeValue("brand.footer", "gray.900")}
       color={useColorModeValue("white", "gray.200")}
+      bgImage={"/assets/footer.png"}
+      bgPos={"center"}
+      bgRepeat={"no-repeat"}
+      bgSize={"cover"}
     >
       <Container as={Stack} maxW={"6xl"} py={10}>
         <Stack align={{ sm: "center", md: "flex-start" }}>
@@ -70,8 +74,10 @@ export default function LargeWithNewsletter() {
           <Stack direction={"row"} w={{ sm: "100%", md: "auto" }}>
             <Input
               placeholder={"Your email address"}
-              bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-              border={0}
+              bg={useColorModeValue("whiteAlpha.300", "whiteAlpha.100")}
+              border={1}
+              borderStyle={"solid"}
+              borderColor={"brand.primary"}
               _focus={{
                 bg: "whiteAlpha.300",
               }}

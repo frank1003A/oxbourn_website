@@ -33,8 +33,8 @@ const Stats = () => {
     <Container
       minH={150}
       bgImage={{
-        base: "/assets/bg-tree.png",
-        sm: "/assets/bg-tree.png",
+        base: "/assets/bg-round.png",
+        sm: "/assets/footer.png",
         md: "/assets/bg-bottom.png",
       }}
       bgPos={"center"}
