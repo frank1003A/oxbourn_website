@@ -31,7 +31,12 @@ import {
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BiMailSend, BiSolidBriefcase, BiSolidPhone } from "react-icons/bi";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaChevronDown,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import SocialButton from "../SocialButton";
 
 export default function WithSubnavigation() {
@@ -307,15 +312,9 @@ const DesktopNav = ({
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <Box
-                as="a"
-                p={2}
-                noOfLines={1}
-                href={navItem.href ?? "#"}
-                fontSize={"16px"}
-                fontWeight={500}
-                height={"fit-content"}
-                color={isOffset ? "white" : "brand.text"}
+              <Flex
+                align={"center"}
+                transition={".3s"}
                 borderBottom={4}
                 borderBottomStyle={"solid"}
                 borderBottomColor={
@@ -327,11 +326,30 @@ const DesktopNav = ({
                   textDecoration: "none",
                   borderBottomColor: isOffset ? "white" : "brand.primary",
                 }}
-                transition={".5s"}
-                onClick={() => handleClickScroll(navItem.href as string)}
               >
-                {navItem.label}
-              </Box>
+                <Box
+                  as="a"
+                  p={2}
+                  noOfLines={1}
+                  href={navItem.href ?? "#"}
+                  fontSize={"16px"}
+                  fontWeight={500}
+                  height={"fit-content"}
+                  color={isOffset ? "white" : "brand.text"}
+                  onClick={() => handleClickScroll(navItem.href as string)}
+                >
+                  {navItem.label}
+                </Box>
+                <Box
+                  as={"span"}
+                  fontSize={"16px"}
+                  fontWeight={500}
+                  height={"fit-content"}
+                  color={isOffset ? "white" : "brand.text"}
+                >
+                  {navItem.children ? <FaChevronDown /> : ""}
+                </Box>
+              </Flex>
             </PopoverTrigger>
 
             {navItem.children && (
