@@ -1,26 +1,15 @@
-import {
-  Box,
-  Container,
-  Heading,
-  SimpleGrid,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { BiMailSend, BiServer } from "react-icons/bi";
 import { FaStackExchange } from "react-icons/fa";
 import CustomCard from "../CustomCard";
+import PrimaryContainer from "../PrimaryContainer";
 import SectionTag from "../SectionTag";
 
 const Services = () => {
   return (
-    <Container
-      as={"section"}
-      py={{ base: 5, md: 10, lg: "65px" }}
-      px={{ base: 5, sm: 5, md: 10, xl: 32, lg: 16 }}
-      margin={0}
-      width={"100%"}
-      pos={"relative"}
-      maxW={"none"}
+    <PrimaryContainer
+      /** py={{ base: 5, md: 10, lg: "65px" }}
+      px={{ base: 5, sm: 5, md: 10, xl: 32, lg: 16 }} */
       bgColor={"#ebeaf9"}
       id="#services"
     >
@@ -79,7 +68,7 @@ const Services = () => {
           />
         </SimpleGrid>
       </Stack>
-    </Container>
+    </PrimaryContainer>
   );
 };
 

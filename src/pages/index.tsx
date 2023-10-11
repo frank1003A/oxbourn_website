@@ -1,6 +1,7 @@
 import Loader from "@/components/Loader";
 import About from "@/components/UI/About";
 import ChooseUs from "@/components/UI/ChooseUs";
+import Contact from "@/components/UI/Contact";
 import Hero from "@/components/UI/Hero";
 import LatestArticle from "@/components/UI/LatestArticle";
 import Portfolio from "@/components/UI/Portfolio";
@@ -38,6 +39,7 @@ export default function Home() {
           <Portfolio />
           <ChooseUs />
           <LatestArticle />
+          <Contact />
           <ScrollToTop
             component={<FaArrowUp />}
             smooth

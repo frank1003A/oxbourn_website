@@ -1,13 +1,6 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  SimpleGrid,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { useState } from "react";
+import PrimaryContainer from "../PrimaryContainer";
 import SectionTag from "../SectionTag";
 import PortfolioBtn from "../portfolio/PortfolioBtn";
 import PortfolioCard from "../portfolio/PortfolioCard";
@@ -84,14 +77,9 @@ const Portfolio = () => {
   );
 
   return (
-    <Container
-      as={"section"}
-      py={{ base: 5, md: 20, lg: "65px" }}
-      px={{ base: 5, sm: 5, md: 10, xl: 32, lg: 16 }}
-      margin={0}
-      width={"100%"}
-      pos={"relative"}
-      maxW={"none"}
+    <PrimaryContainer
+      /**py={{ base: 5, md: 20, lg: "65px" }}
+      px={{ base: 5, sm: 5, md: 10, xl: 32, lg: 16 }} */
       id="#portfolio"
     >
       <Stack align={"center"} m={"auto"} textAlign={"center"} mb={"35px"}>
@@ -155,7 +143,7 @@ const Portfolio = () => {
       >
         {gridComponent}
       </SimpleGrid>
-    </Container>
+    </PrimaryContainer>
   );
 };
 
