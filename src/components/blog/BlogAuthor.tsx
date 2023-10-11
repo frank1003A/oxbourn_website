@@ -1,4 +1,4 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { Avatar, HStack, Image, Text } from "@chakra-ui/react";
 
 interface BlogAuthorProps {
   date: Date;
@@ -18,6 +18,7 @@ const BlogAuthor = (props: BlogAuthorProps) => {
         borderRadius="full"
         boxSize="40px"
         src="https://100k-faces.glitch.me/random-image"
+        fallback={<Avatar />}
         alt={`Avatar of ${props.name}`}
       />
       <Text fontWeight="600">{props.name}</Text>
