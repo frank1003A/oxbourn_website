@@ -36,8 +36,11 @@ const CustomBtn = ({ children, ...rest }: CustomBtnProps) => {
       transition={"0.3s"}
       zIndex={1}
       color={"white"}
+      bgColor={"brand.primary"}
       colorScheme="orange"
-      boxShadow={"box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;"}
+      boxShadow={
+        "box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;"
+      }
       {...rest}
     >
       {children}
