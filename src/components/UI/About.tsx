@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   Center,
-  Container,
   Flex,
   Heading,
   Stack,
@@ -11,19 +10,12 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { BiSolidCheckCircle } from "react-icons/bi";
+import PrimaryContainer from "../PrimaryContainer";
 import SectionTag from "../SectionTag";
 
 const About = () => {
   return (
-    <Container
-      py={{ base: 5, sm: 10, md: 20, lg: 36 }}
-      px={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
-      margin={0}
-      width={"100%"}
-      pos={"relative"}
-      maxW={"none"}
-      id="#about"
-    >
+    <PrimaryContainer id="#about">
       <Flex
         direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
         gap={"2rem"}
@@ -174,7 +166,7 @@ const About = () => {
           </Button>
         </Stack>
       </Flex>
-    </Container>
+    </PrimaryContainer>
   );
 };
 
