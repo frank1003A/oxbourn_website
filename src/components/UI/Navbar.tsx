@@ -244,7 +244,8 @@ export default function WithSubnavigation() {
           borderColor={"brand.primary"}
           borderRadius={5}
           transition={".3s"}
-          href={"#"}
+          href={"#contact"}
+          onClick={() => handleClickScroll("#contact")}
           _hover={{
             bg: offset ? "" : "brand.primary",
             color: isOffset ? "" : "white",

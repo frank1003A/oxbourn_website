@@ -1,23 +1,20 @@
-import { Container, Stack } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
+import PrimaryContainer from "../PrimaryContainer";
 import SectionTag from "../SectionTag";
 import SingleBlog from "../blog/SingleBlog";
 
 const LatestArticle = () => {
   return (
-    <Container
-      py={{ sm: 10, md: 20, lg: 36 }}
-      px={{ sm: 5, md: 10, xl: 32, lg: 16 }}
-      margin={0}
-      width={"100%"}
-      pos={"relative"}
-      maxW={"none"}
+    <PrimaryContainer
+      /**py={{ sm: 10, md: 20, lg: 36 }}
+      px={{ sm: 5, md: 10, xl: 32, lg: 16 }} */
       id="#singleblog"
     >
       <Stack align={"center"} m={"auto"}>
         <SectionTag title="latest blog article" />
         <SingleBlog />
       </Stack>
-    </Container>
+    </PrimaryContainer>
   );
 };
 
