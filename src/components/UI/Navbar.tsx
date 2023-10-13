@@ -30,7 +30,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BiMailSend, BiSolidBriefcase, BiSolidPhone } from "react-icons/bi";
+import { BiMailSend, BiSolidPhone } from "react-icons/bi";
 import {
   FaChevronDown,
   FaInstagram,
@@ -256,7 +256,7 @@ export default function WithSubnavigation() {
         size="xs"
       >
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent fontFamily={"inherit"}>
           <MobileNav
             activeLink={activeLink}
             handleClickScroll={handleClickScroll}
@@ -264,9 +264,6 @@ export default function WithSubnavigation() {
           />
         </DrawerContent>
       </Drawer>
-      {/**<Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse> */}
     </>
   );
 }
@@ -477,15 +474,25 @@ const MobileNav = ({
         borderTopStyle={"solid"}
         borderTopColor={"#eee"}
       >
-        <SocialButton label={"Twitter"} href={"#"}>
-          <FaTwitter />
-        </SocialButton>
-        <SocialButton label={"YouTube"} href={"#"}>
-          <FaYoutube />
-        </SocialButton>
-        <SocialButton label={"Instagram"} href={"#"}>
-          <FaInstagram />
-        </SocialButton>
+        <Button
+          as={"a"}
+          fontSize={"16px"}
+          fontWeight={600}
+          padding={"25px 30px"}
+          color={"white"}
+          textTransform={"capitalize"}
+          bg={"brand.primary"}
+          borderRadius={5}
+          transition={".3s"}
+          href={"#contact"}
+          onClick={() => handleClickScroll("#contact")}
+          w="full"
+          _focus={{
+            outline: "none",
+          }}
+        >
+          Contact us
+        </Button>
       </Stack>
     </Stack>
   );
@@ -521,6 +528,7 @@ const MobileNavItem = ({
           href={href ?? "#"}
           w={"100%"}
           display={"flex"}
+          fontFamily={"inherit"}
           borderRadius={5}
           justifyContent="space-between"
           alignItems="center"
@@ -595,17 +603,8 @@ const Logo = () => {
           align={"center"}
           justifyContent={"flex-start"}
           gap={"5px"}
-          fontSize={"40px"}
+          fontSize={"30px"}
         >
-          {/**<Image
-                src={logo.src}
-                height={60}
-                width={60}
-                alt={"oxbourn-logo"}
-              /> */}
-          <Box as={"span"} color={"brand.primary"}>
-            <BiSolidBriefcase />
-          </Box>
           <Heading color={"#555"} fontFamily={"inherit"} fontWeight={600}>
             Oxbourn
           </Heading>

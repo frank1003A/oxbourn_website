@@ -14,6 +14,13 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 const Customlayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
+      <style jsx global>
+        {`
+          :root {
+            --font-inter: ${inter.style.fontFamily};
+          }
+        `}
+      </style>
       <CustomHead />
       <div className={inter.className}>
         <WithSubnavigation />
