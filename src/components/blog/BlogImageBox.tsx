@@ -14,6 +14,7 @@ const BlogImageBox = () => {
       marginRight="3"
       position="relative"
       alignItems="center"
+      data-aos="zoom-in-up"
     >
       <Box
         width={{ base: "100%", sm: "100%", md: "100%", lg: "100%" }}

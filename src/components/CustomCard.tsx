@@ -78,7 +78,8 @@ const CustomCard = ({
             <Box w="100%" margin={"19px 0 11px 0"}>
               <Heading
                 as={"h2"}
-                fontSize={"22px"}
+                fontFamily={"inherit"}
+                fontSize={{ base: "20px", sm: "20px", md: "22px", lg: "22px" }}
                 fontWeight={700}
                 transition={"0.5s"}
                 lineHeight={"28px"}
@@ -89,7 +90,7 @@ const CustomCard = ({
             </Box>
             <Box w="100%">
               <Text
-                fontSize={"16px"}
+                fontSize={{ base: "14px", sm: "14px", md: "16px", lg: "16px" }}
                 fontWeight={400}
                 textAlign={"center"}
                 transition={"0.5s"}
@@ -103,7 +104,7 @@ const CustomCard = ({
             <Link
               href={"#"}
               style={{
-                fontSize: "16px",
+                fontSize: "14px",
                 color: isOver ? "white" : "#2F3C7E",
                 textDecoration: "underline",
               }}
