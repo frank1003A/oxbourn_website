@@ -20,21 +20,22 @@ const SingleBlog = () => {
         flex="1"
         flexDirection="column"
         alignItems={{
-          base: "center",
-          sm: "center",
+          base: "flex-start",
+          sm: "flex-start",
           md: "flex-start",
           lg: "flex-start",
         }}
-        textAlign={{ base: "center", sm: "center", md: "start", lg: "start" }}
+        textAlign={{ base: "start", sm: "start", md: "start", lg: "start" }}
         justifyContent="flex-start"
         marginTop={{ base: "3", sm: "0", md: 2, lg: 5 }}
         fontFamily={"inherit"}
+        data-aos="fade-right"
       >
         <BlogTags tags={["Engineering", "Product"]} />
         <Box w={"100%"}>
           <Text
             textDecoration="none"
-            fontSize={30}
+            fontSize={{ base: 25, sm: 25, md: 30, lg: 30 }}
             fontFamily={"inherit"}
             color={"brand.heading"}
             lineHeight={"1.2"}
@@ -48,7 +49,7 @@ const SingleBlog = () => {
         <Box mt={"5px"}>
           <Text
             as="p"
-            fontSize={16}
+            fontSize={{ base: 14, sm: 14, md: 16, lg: 16 }}
             w={"100%"}
             margin={"12px auto 0"}
             fontWeight={400}
@@ -75,10 +76,10 @@ const SingleBlog = () => {
             Read More
           </Link>
         </Box>
-        <Box mt={"4px"}>
+        <Box mt={"10px"}>
           <BlogAuthor name="John Doe" date={new Date("2021-04-06T19:01:27Z")} />
         </Box>
-        <HStack mt={"10px"}>
+        <HStack mt={{ base: "25px", sm: "25px", md: "auto", lg: "auto" }}>
           <Button rightIcon={<FaBlog />}>View Blogs</Button>
         </HStack>
       </Box>
