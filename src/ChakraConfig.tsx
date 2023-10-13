@@ -39,4 +39,13 @@ const breakpoints = {
   "2xl": "1536px",
 };
 
-export const theme = extendTheme({ colors, breakpoints, customTheme });
+export const theme = extendTheme({
+  colors,
+  breakpoints,
+  customTheme,
+  fonts: {
+    primary: "var(--font-inter)",
+    heading: "var(--font-inter)",
+    body: "var(--font-inter)",
+  },
+});
