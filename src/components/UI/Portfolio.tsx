@@ -86,7 +86,7 @@ const Portfolio = () => {
         <SectionTag title="portfolio" />
         <Box data-aos="zoom-in-up">
           <Heading
-            fontSize={36}
+            fontSize={{ base: 25, sm: 25, md: 36, lg: 36 }}
             color={"brand.heading"}
             lineHeight={"1.2"}
             fontWeight={700}
@@ -97,7 +97,7 @@ const Portfolio = () => {
         </Box>
         <Box data-aos="zoom-in-up">
           <Text
-            fontSize={16}
+            fontSize={{ base: 14, sm: 14, md: 16, lg: 16 }}
             w={{ base: "100%", sm: "100%", md: "100%", lg: "53%" }}
             margin={"12px auto 0"}
             fontWeight={400}

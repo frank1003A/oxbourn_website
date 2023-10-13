@@ -175,23 +175,10 @@ export default function WithSubnavigation() {
               overflowY={"hidden"}
             >
               <Box
-                height={{ base: "25px", sm: "25px", md: "25px", lg: "25px" }}
-                display={"block"}
-                width={{ base: "25px", sm: "25px", md: "25px", lg: "25px" }}
-                bgImage={
-                  isOffset
-                    ? "url('/assets/logo-white.png')"
-                    : "url('/assets/logo-blue.png')"
-                }
-                bgPos={"center"}
-                bgSize={"cover"}
-              />
-              <Box
                 as="span"
                 color={isOffset ? "white" : "blackAlpha.800"}
                 fontFamily={"inherit"}
                 fontWeight={600}
-                height={{ base: "30px", sm: "30px", md: "auto", lg: "auto" }}
               >
                 Oxbourn
               </Box>
@@ -247,8 +234,13 @@ export default function WithSubnavigation() {
           href={"#contact"}
           onClick={() => handleClickScroll("#contact")}
           _hover={{
+            transform: "translateY(-5px)",
+            boxShadow: "0 4px 4px 0 rgba(0, 0, 0, 0.2)",
             bg: offset ? "" : "brand.primary",
             color: isOffset ? "" : "white",
+          }}
+          _focus={{
+            outline: "none",
           }}
         >
           Contact us
@@ -311,12 +303,17 @@ const DesktopNav = ({
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
+          <Popover
+            trigger={"hover"}
+            placement={"bottom-start"}
+            styleConfig={{
+              transition: ".3s",
+            }}
+          >
             <PopoverTrigger>
               <Flex
                 align={"center"}
                 justify={"center"}
-                transition={".3s"}
                 borderBottom={4}
                 borderBottomStyle={"solid"}
                 borderBottomColor={
@@ -403,7 +400,7 @@ const DesktopSubNav = ({
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: addAlpha(brandColor, 0.5) as string }}
+      _hover={{ bg: addAlpha(brandColor, 0.1) as string }}
     >
       <Stack
         direction={"row"}
@@ -411,11 +408,7 @@ const DesktopSubNav = ({
         onClick={() => handleClickScroll && handleClickScroll(href as string)}
       >
         <Box>
-          <Text
-            transition={"all .3s ease"}
-            _groupHover={{ color: "white" }}
-            fontWeight={500}
-          >
+          <Text transition={"all .3s ease"} fontWeight={500}>
             {label}
           </Text>
           <Text fontSize={"sm"}>{subLabel}</Text>
@@ -635,7 +628,7 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: "Job Board",
-        subLabel: "Find your dream design job",
+        subLabel: "Find your dream job",
         href: "#",
       },
       {
@@ -650,17 +643,17 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: "About us",
-        subLabel: "Brief Information about Oxbourn",
+        subLabel: "About oxbourn consulting",
         href: "#about",
       },
       {
         label: "Achievments",
-        subLabel: "Brief Overview",
+        subLabel: "Number overview",
         href: "#qo",
       },
       {
         label: "Why Oxbourn",
-        subLabel: "Why we are here",
+        subLabel: "Why patner with us",
         href: "#whyoxbourn",
       },
     ],
