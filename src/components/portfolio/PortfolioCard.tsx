@@ -10,6 +10,7 @@ import {
   useToken,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { FaLink } from "react-icons/fa";
 
@@ -113,14 +114,16 @@ const PortfolioCard = ({ img, category, alt }: PortfolioCardProps) => {
                   transition={".5s"}
                   transform={isOver ? "translateY(0)" : "translateY(50px)"}
                 >
-                  <Circle
-                    bgColor={"white"}
-                    rounded={"full"}
-                    p={4}
-                    color={"brand.primary"}
-                  >
-                    <FaLink />
-                  </Circle>
+                  <Link href={"#"}>
+                    <Circle
+                      bgColor={"white"}
+                      rounded={"full"}
+                      p={4}
+                      color={"brand.primary"}
+                    >
+                      <FaLink />
+                    </Circle>
+                  </Link>
                   <Text
                     as={"span"}
                     color={"white"}

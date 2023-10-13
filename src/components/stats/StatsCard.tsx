@@ -17,6 +17,7 @@ const StatsCard = ({
         fontSize={"69px"}
         fontWeight={"700"}
         lineHeight={1}
+        transition={"250ms"}
         id={id}
         _after={{
           content: `"+"`,
