@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import CustomBtn from "../CustomBtn";
@@ -13,8 +13,8 @@ export default function Hero() {
         paddingInline={"0px"}
         maxW={"none"}
         w={"100%"}
-        //bgColor={"#eee"}
-        bgImage={"url('/assets/bgwp.png')"}
+        bgColor={"brand.primary"}
+        bgImage={"url('/assets/footer.png')"}
         bgRepeat={"no-repeat"}
         bgSize={"center"}
         pos={"relative"}
@@ -105,19 +105,15 @@ export default function Hero() {
             fontWeight={600}
             fontSize={{ base: 50, sm: 50, md: 60 }}
             lineHeight={"110%"}
-            color={"brand.heading"}
+            color={"white"}
             noOfLines={50}
-            maxW={{ base: "none", sm: "none", md: "none", lg: "58%" }}
+            maxW={{ base: "none", sm: "none", md: "none", lg: "50%" }}
             textTransform={"capitalize"}
           >
-            Unlock your potential, Elevate
-            <br />
-            <Text as={"span"} color={"brand.primary"}>
-              your business
-            </Text>
+            Unlock your potential, Elevate your business
           </Heading>
           <Text
-            color={"gray.500"}
+            color={"white"}
             noOfLines={50}
             maxW={{ base: "none", sm: "none", md: "none", lg: "50%" }}
             lineHeight={"1.7"}
@@ -149,9 +145,38 @@ export default function Hero() {
               height={"auto"}
               fontWeight={500}
               rightIcon={<FaArrowRight />}
+              transition=".3s"
+              _hover={{
+                transform: "translateY(-5px)",
+                boxShadow: "0 4px 4px 0 rgba(0, 0, 0, 0.2)",
+              }}
+              _focus={{
+                outline: "none",
+              }}
             >
               Get Started
             </CustomBtn>
+            <Button
+              rounded={"md"}
+              padding={"16px 34px 16px 28px"}
+              marginRight={"10px"}
+              height={"auto"}
+              borderColor={"brand.primary"}
+              bgColor={"white"}
+              color={"brand.primary"}
+              fontWeight={500}
+              variant={"outline"}
+              transition=".3s"
+              _hover={{
+                transform: "translateY(-5px)",
+                boxShadow: "0 4px 4px 0 rgba(0, 0, 0, 0.2)",
+              }}
+              _focus={{
+                outline: "none",
+              }}
+            >
+              Get Quote
+            </Button>
           </Stack>
         </Stack>
       </Container>

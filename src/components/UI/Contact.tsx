@@ -39,7 +39,7 @@ const Contact = () => {
             <Heading
               color={"brand.heading"}
               as="h3"
-              fontSize={{ base: 30, sm: 30, md: 36 }}
+              fontSize={{ base: 25, sm: 25, md: 36, lg: 36 }}
               mb={5}
               textAlign={{
                 base: "center",
@@ -52,12 +52,12 @@ const Contact = () => {
               data-aos="fade-down"
               w={"100%"}
             >
-              Consult with us about your buisness needs.
+              Contact us about your buisness needs.
             </Heading>
             <Center>
               <Image
-                src="/assets/mes.svg"
-                alt="about-image"
+                src="mes_doeajk.svg"
+                alt="contact-us-image"
                 height={500}
                 width={500}
               />
@@ -70,8 +70,9 @@ const Contact = () => {
               bgColor={"white"}
               borderRadius={5}
               py={10}
-              px={10}
+              px={{ base: 5, sm: 5, md: 10, lg: 10 }}
               rowGap={5}
+              data-aos="flip-left"
             >
               <Stack
                 direction={{
@@ -107,7 +108,18 @@ const Contact = () => {
                 </FormControl>
               </Box>
               <Box>
-                <CustomBtn>send message</CustomBtn>
+                <CustomBtn
+                  transition=".3s"
+                  _hover={{
+                    transform: "translateY(-5px)",
+                    boxShadow: "0 4px 4px 0 rgba(0, 0, 0, 0.2)",
+                  }}
+                  _focus={{
+                    outline: "none",
+                  }}
+                >
+                  send message
+                </CustomBtn>
               </Box>
             </Stack>
           </Stack>
