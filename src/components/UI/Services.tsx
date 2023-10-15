@@ -11,6 +11,9 @@ const Services = () => {
       /** py={{ base: 5, md: 10, lg: "65px" }}
       px={{ base: 5, sm: 5, md: 10, xl: 32, lg: 16 }} */
       bgColor={"#ebeaf9"}
+      bgImage={"url('/assets/footer.png')"}
+      bgRepeat={"no-repeat"}
+      bgSize={"center"}
       id="#services"
     >
       <Stack align={"center"}>

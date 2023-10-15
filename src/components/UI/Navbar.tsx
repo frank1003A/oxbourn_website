@@ -126,8 +126,6 @@ export default function WithSubnavigation() {
         px={{ base: 5, sm: 5, md: 10, lg: 16, xl: 32 }}
         //borderColor={useColorModeValue("gray.200", "gray.900")}
         borderBottom={isOffset ? "none" : 1}
-        borderBottomStyle={"solid"}
-        borderBottomColor={"#eee"}
         align={"center"}
         position={"sticky"}
         top={0}
