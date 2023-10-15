@@ -15,7 +15,49 @@ import SectionTag from "../SectionTag";
 
 const About = () => {
   return (
-    <PrimaryContainer id="#about">
+    <PrimaryContainer
+      id="#about"
+      bgImage={"url('/assets/footer.png')"}
+      bgRepeat={"no-repeat"}
+      bgSize={"center"}
+      pos={"relative"}
+    >
+      {/**<Box
+        pos={"absolute"}
+        bgColor={"white"}
+        top={"-50px"}
+        h={"100px"}
+        left={16}
+        right={16}
+        boxShadow={"md"}
+        borderRadius={5}
+      >
+        <Flex
+          direction={{ base: "column", sm: "column", md: "row", lg: "row" }}
+          height={"100%"}
+          align={"center"}
+          justify={"center"}
+          gap={20}
+          fontSize={"16px"}
+        >
+          <Stack align={"center"}>
+            <BiTime />
+            <Text>10+ Years of Experience</Text>
+          </Stack>
+          <Stack align={"center"}>
+            <BiTime />
+            <Text>37 Successful Projects</Text>
+          </Stack>
+          <Stack align={"center"}>
+            <BiTime />
+            <Text>28 Patner Project</Text>
+          </Stack>
+          <Stack align={"center"}>
+            <BiTime />
+            <Text>28 Patner Project</Text>
+          </Stack>
+        </Flex>
+      </Box> */}
       <Stack align={"center"}>
         <SectionTag title="about us" />
         <Flex

@@ -1,7 +1,7 @@
 import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import CustomBtn from "../CustomBtn";
+import HeroBox from "../HeroBox";
 import SectionTag from "../SectionTag";
 
 export default function Hero() {
@@ -19,66 +19,32 @@ export default function Hero() {
         bgSize={"center"}
         pos={"relative"}
       >
-        {/** hero img */}
+        {/** hero box */}
         <Box
-          pos={"absolute"}
-          width={"50%"}
-          display={{ base: "none", sm: "none", md: "none", lg: "block" }}
+          pos={{
+            base: "relative",
+            sm: "relative",
+            md: "absolute",
+            lg: "absolute",
+          }}
+          width={{ base: "100%", sm: "100%", md: "50%", lg: "50%" }}
+          display={{ base: "flex", sm: "flex", md: "none", lg: "flex" }}
+          alignItems={"center"}
+          justifyContent={"center"}
           top={0}
           right={0}
           bottom={"7%"}
-          bgImage={"url('/assets/twopepo.png')"}
+          p={{ base: "2rem", sm: "2rem", md: "0px", lg: "0px" }}
+          px={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
+          /**bgImage={"url('/assets/twopepo.png')"}
           bgPosition={"bottom"}
           bgRepeat={"no-repeat"}
           bgPos={"center"}
-          bgSize={"contain"}
-          zIndex={2}
+          bgSize={"contain"} */
+          zIndex={15}
           data-aos="zoom-in-up"
         >
-          <Box pos={"relative"} w={"100%"} height={"100%"}>
-            <motion.div
-              style={{
-                position: "absolute",
-                top: "50px",
-                right: "20px",
-              }}
-              initial={{ y: 50 }}
-              animate={{
-                y: [-10, 10, -10],
-                transition: { duration: 5, repeat: Infinity },
-              }}
-            >
-              <Box
-                h={100}
-                w={200}
-                bgImage={"/assets/banner-shape.png"}
-                bgRepeat={"no-repeat"}
-                bgPos={"center"}
-                bgSize={"contain"}
-              />
-            </motion.div>
-            <motion.div
-              style={{
-                position: "absolute",
-                bottom: "10px",
-                left: "-10px",
-              }}
-              initial={{ y: 800 }}
-              animate={{
-                y: [-10, 10, -10],
-                transition: { duration: 5, repeat: Infinity },
-              }}
-            >
-              <Box
-                h={300}
-                w={300}
-                bgImage={"/assets/banner-offer.png"}
-                bgRepeat={"no-repeat"}
-                bgPos={"center"}
-                bgSize={"contain"}
-              />
-            </motion.div>
-          </Box>
+          <HeroBox />
         </Box>
         {/** text wrap */}
         <Stack
@@ -183,3 +149,48 @@ export default function Hero() {
     </>
   );
 }
+
+/**<Box pos={"relative"} w={"100%"} height={"100%"}>
+            <motion.div
+              style={{
+                position: "absolute",
+                top: "50px",
+                right: "20px",
+              }}
+              initial={{ y: 50 }}
+              animate={{
+                y: [-10, 10, -10],
+                transition: { duration: 5, repeat: Infinity },
+              }}
+            >
+              <Box
+                h={100}
+                w={200}
+                bgImage={"/assets/banner-shape.png"}
+                bgRepeat={"no-repeat"}
+                bgPos={"center"}
+                bgSize={"contain"}
+              />
+            </motion.div>
+            <motion.div
+              style={{
+                position: "absolute",
+                bottom: "10px",
+                left: "-10px",
+              }}
+              initial={{ y: 800 }}
+              animate={{
+                y: [-10, 10, -10],
+                transition: { duration: 5, repeat: Infinity },
+              }}
+            >
+              <Box
+                h={300}
+                w={300}
+                bgImage={"/assets/banner-offer.png"}
+                bgRepeat={"no-repeat"}
+                bgPos={"center"}
+                bgSize={"contain"}
+              />
+            </motion.div>
+          </Box> */

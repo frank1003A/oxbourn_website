@@ -72,7 +72,6 @@ const Contact = () => {
               py={10}
               px={{ base: 5, sm: 5, md: 10, lg: 10 }}
               rowGap={5}
-              data-aos="flip-left"
             >
               <Stack
                 direction={{
