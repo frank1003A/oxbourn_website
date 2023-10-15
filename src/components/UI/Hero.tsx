@@ -28,7 +28,7 @@ export default function Hero() {
             lg: "absolute",
           }}
           width={{ base: "100%", sm: "100%", md: "50%", lg: "50%" }}
-          display={{ base: "flex", sm: "flex", md: "none", lg: "flex" }}
+          display={{ base: "none", sm: "none", md: "none", lg: "flex" }}
           alignItems={"center"}
           justifyContent={"center"}
           top={0}
