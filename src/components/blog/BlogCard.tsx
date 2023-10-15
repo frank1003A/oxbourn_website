@@ -64,20 +64,26 @@ const BlogCard = (props: BlogCardProps) => {
                 <Box mt={"10px"}>
                   <Text
                     textDecoration="none"
-                    fontSize={{ base: 14, sm: 14, md: 16, lg: 16 }}
+                    fontSize={{ base: 20, sm: 20, md: 20, lg: 20 }}
                     fontFamily={"inherit"}
                     color={"brand.heading"}
                     lineHeight={"1.2"}
                     fontWeight={700}
+                    noOfLines={1}
                     _hover={{ textDecoration: "none" }}
                   >
                     {props.title}
                   </Text>
                 </Box>
-                <Box mt={"5px"}>
+                <Box>
                   <Text
                     as="p"
-                    fontSize={{ base: 14, sm: 14, md: 16, lg: 16 }}
+                    fontSize={{
+                      base: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                    }}
                     w={"100%"}
                     margin={"12px auto 0"}
                     fontWeight={400}
