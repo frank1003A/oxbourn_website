@@ -1,5 +1,6 @@
 import Loader from "@/components/Loader";
 import About from "@/components/UI/About";
+import Banner from "@/components/UI/Banner";
 import ChooseUs from "@/components/UI/ChooseUs";
 import Contact from "@/components/UI/Contact";
 import Hero from "@/components/UI/Hero";
@@ -35,6 +36,7 @@ export default function Home() {
       ) : (
         <Customlayout>
           <Hero />
+          <Banner />
           <About />
           <Services />
           <Stats />

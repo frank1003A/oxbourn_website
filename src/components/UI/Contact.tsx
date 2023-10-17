@@ -62,8 +62,8 @@ const Contact = () => {
               <Image
                 src="chat_kioqvg.svg"
                 alt="contact-us-image"
-                height={300}
-                width={300}
+                height={168}
+                width={168}
               />
             </Center>
           </Box>
@@ -86,27 +86,44 @@ const Contact = () => {
                 }}
               >
                 <FormControl>
-                  <FormLabel htmlFor="">name</FormLabel>
-                  <Input placeholder="name" />
+                  <FormLabel htmlFor="name">name</FormLabel>
+                  <Input
+                    id="name"
+                    autoComplete="given-name"
+                    placeholder="name"
+                    borderRadius={5}
+                  />
                 </FormControl>
                 <FormControl>
-                  <FormLabel>surname</FormLabel>
-                  <Input placeholder="surname" />
+                  <FormLabel htmlFor="surname">surname</FormLabel>
+                  <Input
+                    id="surname"
+                    autoComplete="surname"
+                    placeholder="surname"
+                    borderRadius={5}
+                  />
                 </FormControl>
               </Stack>
               <Box>
                 <FormControl>
-                  <FormLabel>email</FormLabel>
-                  <Input aria-label="" placeholder="surname" />
+                  <FormLabel htmlFor="email">email</FormLabel>
+                  <Input
+                    id="email"
+                    autoComplete="email"
+                    placeholder="email"
+                    borderRadius={5}
+                  />
                 </FormControl>
               </Box>
               <Box>
                 <FormControl>
-                  <FormLabel>message</FormLabel>
+                  <FormLabel htmlFor="message">message</FormLabel>
                   <Textarea
+                    id="message"
                     placeholder="your message"
                     size="sm"
                     maxBlockSize={5}
+                    borderRadius={5}
                   />
                 </FormControl>
               </Box>
