@@ -3,11 +3,11 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const CustomCard = ({
-  icon,
+  imgSrc,
   heading,
   description,
 }: {
-  icon: React.JSX.Element;
+  imgSrc: string;
   heading: string;
   description: string;
 }) => {
@@ -71,8 +71,17 @@ const CustomCard = ({
                 color={"brand.primary"}
                 p={"1rem"}
                 fontSize={"2rem"}
+                display={"flex"}
+                alignItems={"center"}
+                justifyContent={"center"}
               >
-                {icon}
+                <Box
+                  h={"2.2rem"}
+                  w={"2.2rem"}
+                  bgImage={imgSrc}
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                />
               </Box>
             </Box>
             <Box w="100%" margin={"19px 0 11px 0"}>

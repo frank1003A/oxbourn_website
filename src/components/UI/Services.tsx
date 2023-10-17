@@ -1,6 +1,4 @@
 import { Box, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
-import { BiMailSend, BiServer } from "react-icons/bi";
-import { FaStackExchange } from "react-icons/fa";
 import CustomCard from "../CustomCard";
 import PrimaryContainer from "../PrimaryContainer";
 import SectionTag from "../SectionTag";
@@ -56,17 +54,17 @@ const Services = () => {
         </Stack>
         <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3 }} gap={5}>
           <CustomCard
-            icon={<BiMailSend />}
+            imgSrc="/assets/oe.png"
             heading="Operational Efficiency Optimization"
             description="We specialize in optimizing operations for enhanced productivity and cost savings."
           />
           <CustomCard
-            icon={<FaStackExchange />}
+            imgSrc="/assets/sp.png"
             heading="Strategic Planning and Advisory"
             description="We offer expert guidance in developing comprehensive strategic plans that align with a company's goals."
           />
           <CustomCard
-            icon={<BiServer />}
+            imgSrc="/assets/mr.png"
             heading="Market Research and Analysis"
             description="Oxbourn Consulting delivers data-driven insights for smart decision-making and effective marketing."
           />
