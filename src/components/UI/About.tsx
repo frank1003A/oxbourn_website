@@ -37,7 +37,7 @@ const About = () => {
             overflow={"hidden"}
             data-aos="zoom-in-up"
           >
-            <Center>
+            <Center w={"100%"}>
               <Image
                 src={"aup_gcmqkd.svg"}
                 alt="about-us-image"
