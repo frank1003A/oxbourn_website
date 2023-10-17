@@ -12,7 +12,7 @@ export default function cloudinaryLoader({
   const params = [
     "f_auto",
     "c_limit",
-    `w_500`,
+    `w_auto`,
     `h_500`,
     `q_${quality || "auto"}`,
   ];
