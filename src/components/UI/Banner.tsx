@@ -11,8 +11,8 @@ const Banner = () => {
       px={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
       borderBottom={"1px solid"}
       borderBottomColor={"#eee"}
-      borderRadius={5}
       overflow={"hidden"}
+      boxShadow={"rgba(149, 157, 165, 0.2) 0px 8px 24px;"}
     >
       <CustomCarousel />
     </Box>
