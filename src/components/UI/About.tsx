@@ -9,7 +9,6 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { BiSolidCheckCircle } from "react-icons/bi";
-import CustomCarousel from "../CustomCarousel";
 import PrimaryContainer from "../PrimaryContainer";
 import SectionTag from "../SectionTag";
 
@@ -22,20 +21,6 @@ const About = () => {
       bgSize={"center"}
       pos={"relative"}
     >
-      <Box
-        pos={"absolute"}
-        bgColor={"white"}
-        top={"-50px"}
-        h={"100px"}
-        left={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
-        right={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
-        boxShadow={"md"}
-        borderRadius={5}
-        overflow={"hidden"}
-        data-aos="fade-up"
-      >
-        <CustomCarousel />
-      </Box>
       <Stack align={"center"}>
         <SectionTag title="about us" />
         <Flex
