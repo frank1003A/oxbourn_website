@@ -87,32 +87,17 @@ const Contact = () => {
               >
                 <FormControl>
                   <FormLabel htmlFor="name">name</FormLabel>
-                  <Input
-                    id="name"
-                    autoComplete="given-name"
-                    placeholder="name"
-                    borderRadius={5}
-                  />
+                  <Input id="name" placeholder="name" borderRadius={5} />
                 </FormControl>
                 <FormControl>
                   <FormLabel htmlFor="surname">surname</FormLabel>
-                  <Input
-                    id="surname"
-                    autoComplete="surname"
-                    placeholder="surname"
-                    borderRadius={5}
-                  />
+                  <Input id="surname" placeholder="surname" borderRadius={5} />
                 </FormControl>
               </Stack>
               <Box>
                 <FormControl>
                   <FormLabel htmlFor="email">email</FormLabel>
-                  <Input
-                    id="email"
-                    autoComplete="email"
-                    placeholder="email"
-                    borderRadius={5}
-                  />
+                  <Input id="email" placeholder="email" borderRadius={5} />
                 </FormControl>
               </Box>
               <Box>
