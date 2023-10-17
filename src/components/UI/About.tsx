@@ -6,10 +6,10 @@ import {
   Heading,
   Stack,
   Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { BiSolidCheckCircle } from "react-icons/bi";
+import CustomCarousel from "../CustomCarousel";
 import PrimaryContainer from "../PrimaryContainer";
 import SectionTag from "../SectionTag";
 
@@ -22,42 +22,20 @@ const About = () => {
       bgSize={"center"}
       pos={"relative"}
     >
-      {/**<Box
+      <Box
         pos={"absolute"}
         bgColor={"white"}
         top={"-50px"}
         h={"100px"}
-        left={16}
-        right={16}
+        left={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
+        right={{ base: 5, sm: 5, md: 20, xl: 32, lg: 16 }}
         boxShadow={"md"}
         borderRadius={5}
+        overflow={"hidden"}
+        data-aos="fade-up"
       >
-        <Flex
-          direction={{ base: "column", sm: "column", md: "row", lg: "row" }}
-          height={"100%"}
-          align={"center"}
-          justify={"center"}
-          gap={20}
-          fontSize={"16px"}
-        >
-          <Stack align={"center"}>
-            <BiTime />
-            <Text>10+ Years of Experience</Text>
-          </Stack>
-          <Stack align={"center"}>
-            <BiTime />
-            <Text>37 Successful Projects</Text>
-          </Stack>
-          <Stack align={"center"}>
-            <BiTime />
-            <Text>28 Patner Project</Text>
-          </Stack>
-          <Stack align={"center"}>
-            <BiTime />
-            <Text>28 Patner Project</Text>
-          </Stack>
-        </Flex>
-      </Box> */}
+        <CustomCarousel />
+      </Box>
       <Stack align={"center"}>
         <SectionTag title="about us" />
         <Flex
@@ -68,43 +46,27 @@ const About = () => {
           <Box
             w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
             h={"100%"}
+            maxW={"100%"}
             display={{ base: "block", sm: "block", md: "block", lg: "block" }}
             pos={"relative"}
+            overflow={"hidden"}
             data-aos="zoom-in-up"
           >
             <Center>
               <Image
-                src={"sd2_pxthqn.png"}
+                src={"aup_gcmqkd.svg"}
                 alt="about-us-image"
                 height={450}
                 width={450}
               />
             </Center>
-            <Box
-              zIndex="-1"
-              position="absolute"
-              left={0}
-              right={0}
-              top={0}
-              bottom={0}
-            >
-              <Box
-                bgGradient={useColorModeValue(
-                  "radial(brand.primary 1px, transparent 1px)",
-                  "radial(brand.primary 1px, transparent 1px)"
-                )}
-                backgroundSize="20px 20px"
-                opacity="0.4"
-                height="100%"
-              />
-            </Box>
           </Box>
           <Stack
             w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
             h="100%"
             align={{
-              base: "center",
-              sm: "center",
+              base: "flex-start",
+              sm: "flex-start",
               md: "center",
               lg: "flex-start",
             }}
@@ -119,27 +81,19 @@ const About = () => {
                 lineHeight={"1.2"}
                 fontFamily={"inherit"}
                 w={"100%"}
-                textAlign={{ base: "center", sm: "center" }}
+                textAlign={{ base: "start", sm: "start" }}
+                fontStyle={"normal"}
+                letterSpacing={"1.2"}
+                wordBreak={"break-word"}
               >
-                10+ Years Of Experiences In
-              </Heading>
-            </Box>
-            <Box data-aos="fade-down">
-              <Heading
-                color={"brand.heading"}
-                fontFamily={"inherit"}
-                as="h2"
-                fontSize={{ base: 25, sm: 25, md: 36 }}
-                textAlign={{ base: "center", sm: "center" }}
-              >
-                Business Development.
+                10+ Years Of Experiences In Business Development
               </Heading>
             </Box>
             <Box data-aos="fade-right" data-aos-delay="0">
               <Text
                 fontFamily={"inherit"}
-                margin={"25px 0 0 0"}
-                fontSize={"16px"}
+                margin={"16px 0 0 0"}
+                fontSize={{ base: "14px", sm: "14px", md: "16px", lg: "16px" }}
                 color={"brand.text"}
                 textAlign={{
                   base: "start",

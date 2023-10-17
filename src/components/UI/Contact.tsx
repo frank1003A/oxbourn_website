@@ -44,22 +44,26 @@ const Contact = () => {
               textAlign={{
                 base: "center",
                 sm: "center",
-                md: "start",
-                lg: "start",
+                md: "center",
+                lg: "center",
               }}
               lineHeight={"1.2"}
               fontFamily={"inherit"}
               data-aos="fade-down"
               w={"100%"}
+              fontStyle={"normal"}
+              letterSpacing={"1.2"}
+              wordBreak={"break-word"}
+              textTransform={"capitalize"}
             >
               Contact us about your buisness needs.
             </Heading>
             <Center>
               <Image
-                src="mes_doeajk.svg"
+                src="chat_kioqvg.svg"
                 alt="contact-us-image"
-                height={500}
-                width={500}
+                height={300}
+                width={300}
               />
             </Center>
           </Box>

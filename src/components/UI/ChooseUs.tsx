@@ -33,7 +33,7 @@ const ChooseUs = () => {
           >
             <Center>
               <Image
-                src="sd4_jmvrb3.png"
+                src="sm_daybem.svg"
                 alt="choose-us-image"
                 height={500}
                 width={500}
@@ -44,8 +44,8 @@ const ChooseUs = () => {
             w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
             h="100%"
             align={{
-              base: "center",
-              sm: "center",
+              base: "flex-start",
+              sm: "flex-start",
               md: "center",
               lg: "flex-start",
             }}
@@ -56,19 +56,39 @@ const ChooseUs = () => {
               color={"brand.heading"}
               as="h3"
               fontSize={{ base: 25, sm: 25, md: 36, lg: 36 }}
+              fontStyle={"normal"}
               textAlign={{
-                base: "center",
-                sm: "center",
+                base: "start",
+                sm: "start",
                 md: "start",
                 lg: "start",
               }}
               lineHeight={"1.2"}
+              letterSpacing={"1.2"}
               fontFamily={"inherit"}
               data-aos="fade-down"
               w={"100%"}
+              textTransform={"capitalize"}
             >
               We work with you to realize your business
             </Heading>
+            <Box data-aos="fade-right" data-aos-delay="0">
+              <Text
+                fontFamily={"inherit"}
+                margin={"16px 0 0 0"}
+                fontSize={{ base: "14px", sm: "14px", md: "16px", lg: "16px" }}
+                color={"brand.text"}
+                textAlign={{
+                  base: "start",
+                  sm: "start",
+                  md: "start",
+                  lg: "start",
+                }}
+              >
+                Discover why organizations choose us for tailored solutions and
+                unmatched expertise.
+              </Text>
+            </Box>
             <Stack
               fontSize={{ base: "14px", sm: "14px", md: "16px", lg: "16px" }}
               mt={5}

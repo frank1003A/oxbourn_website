@@ -35,6 +35,7 @@ const BlogCard = (props: BlogCardProps) => {
         boxShadow: "md",
       }}
       role="group"
+      data-aos="fade-up"
     >
       <CardBody p={"0px"} w={"100%"} h={"100%"}>
         <Stack w={"100%"} h={"100%"}>
@@ -85,7 +86,7 @@ const BlogCard = (props: BlogCardProps) => {
                       lg: "16px",
                     }}
                     w={"100%"}
-                    margin={"12px auto 0"}
+                    margin={"8px auto 0"}
                     fontWeight={400}
                     color={"brand.text"}
                     noOfLines={2}

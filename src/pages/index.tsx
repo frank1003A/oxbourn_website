@@ -8,12 +8,14 @@ import Portfolio from "@/components/UI/Portfolio";
 import Services from "@/components/UI/Services";
 import Stats from "@/components/stats/Stats";
 import Customlayout from "@/layouts/Customlayout";
+import { useToken } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const [brandColor] = useToken("colors", ["brand.primary"]);
 
   // Simulate loading for the initial delay (400ms) before animations start
   useEffect(() => {
@@ -44,7 +46,7 @@ export default function Home() {
             component={<FaArrowUp />}
             smooth
             style={{
-              backgroundColor: "#2F3C7E",
+              backgroundColor: brandColor,
               color: "white",
               display: "flex",
               alignItems: "center",
