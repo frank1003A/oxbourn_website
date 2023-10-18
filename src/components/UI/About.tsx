@@ -22,10 +22,9 @@ const About = () => {
       pos={"relative"}
     >
       <Stack align={"center"}>
-        <SectionTag title="about us" />
         <Flex
           direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
-          gap={"2rem"}
+          gap={{ base: "0px", sm: "0px", md: "2rem", lg: "2rem" }}
           h={"100%"}
         >
           <Box
@@ -39,7 +38,7 @@ const About = () => {
           >
             <Center w={"100%"}>
               <Image
-                src={"aup_gcmqkd.svg"}
+                src={"aboutus_o8vvqa.svg"}
                 alt="about-us-image"
                 height={450}
                 width={450}
@@ -58,7 +57,10 @@ const About = () => {
             height={"auto"}
             pos={"relative"}
           >
-            <Box data-aos="fade-down">
+            <Box data-aos="fade-up">
+              <SectionTag title="About us" />
+            </Box>
+            <Box data-aos="fade-up">
               <Heading
                 color={"brand.heading"}
                 as="h3"
@@ -71,10 +73,10 @@ const About = () => {
                 letterSpacing={"1.2"}
                 wordBreak={"break-word"}
               >
-                10+ Years Of Experiences In Business Development
+                10+ Years Of Experience <br /> In Business Development
               </Heading>
             </Box>
-            <Box data-aos="fade-right" data-aos-delay="0">
+            <Box data-aos="fade-up" data-aos-delay="0">
               <Text
                 fontFamily={"inherit"}
                 margin={"16px 0 0 0"}
@@ -94,7 +96,7 @@ const About = () => {
             </Box>
             <Stack
               fontSize={{ base: "14px", sm: "14px", md: "16px", lg: "16px" }}
-              mt={5}
+              mt={4}
               fontFamily={"inherit"}
               color={"brand.text"}
               gap={"1.2rem"}
@@ -102,7 +104,7 @@ const About = () => {
               <Flex
                 align={"center"}
                 gap={"10px"}
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-delay="2"
               >
                 <Box as={"span"} fontSize={"2em"} color={"brand.primary"}>
@@ -113,7 +115,7 @@ const About = () => {
               <Flex
                 align={"center"}
                 gap={"10px"}
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-delay="4"
               >
                 <Box as={"span"} fontSize={"2em"} color={"#ff6305"}>
@@ -124,7 +126,7 @@ const About = () => {
               <Flex
                 align={"center"}
                 gap={"10px"}
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-delay="6"
               >
                 <Box as={"span"} fontSize={"2em"} color={"#31c5e7"}>
@@ -136,10 +138,10 @@ const About = () => {
             <Button
               colorScheme={"orange"}
               bg={"brand.primary"}
-              rounded={"md"}
+              rounded={"sm"}
               padding={"16px 34px 16px 28px"}
               marginRight={"10px"}
-              mt={{ base: "25px", sm: "25px", md: "auto", lg: "auto" }}
+              mt={{ base: "25px", sm: "25px", md: "25px", lg: "25px" }}
               height={"auto"}
               fontWeight={500}
               bottom={"0px"}

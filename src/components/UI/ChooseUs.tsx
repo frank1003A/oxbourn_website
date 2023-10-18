@@ -21,7 +21,6 @@ const ChooseUs = () => {
       id="#whyoxbourn"
     >
       <Stack align={"center"}>
-        <SectionTag title="why choose us" />
         <Flex
           direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
           gap={"2rem"}
@@ -33,7 +32,7 @@ const ChooseUs = () => {
           >
             <Center>
               <Image
-                src="sm_daybem.svg"
+                src="whyus_tf6hxt.svg"
                 alt="choose-us-image"
                 height={500}
                 width={500}
@@ -52,6 +51,9 @@ const ChooseUs = () => {
             height={"auto"}
             pos={"relative"}
           >
+            <Box>
+              <SectionTag title="Why Oxbourn" />
+            </Box>
             <Heading
               color={"brand.heading"}
               as="h3"
@@ -144,7 +146,7 @@ const ChooseUs = () => {
             <Button
               colorScheme={"orange"}
               bg={"brand.primary"}
-              rounded={"md"}
+              rounded={"sm"}
               mt={{ base: "25px", sm: "25px", md: "35px", lg: "35px" }}
               padding={"16px 34px 16px 28px"}
               marginRight={"10px"}
