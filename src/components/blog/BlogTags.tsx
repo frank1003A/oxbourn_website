@@ -14,7 +14,7 @@ const BlogTags = (props: Props) => {
         return (
           <Tag
             size={"md"}
-            borderRadius={"5px"}
+            rounded={"sm"}
             variant="solid"
             bgColor={"brand.primary"}
             key={tag}

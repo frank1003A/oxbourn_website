@@ -1,13 +1,16 @@
 import {
   AbsoluteCenter,
   Box,
+  Button,
   Card,
   CardBody,
+  Divider,
   Image,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import { BiSolidImage } from "react-icons/bi";
+import { FaBlog } from "react-icons/fa";
 import BlogTags from "./BlogTags";
 
 interface BlogCardProps {
@@ -35,6 +38,9 @@ const BlogCard = (props: BlogCardProps) => {
         boxShadow: "md",
       }}
       role="group"
+      border={1}
+      borderStyle={"solid"}
+      borderColor={"#eee"}
       data-aos="fade-up"
     >
       <CardBody p={"0px"} w={"100%"} h={"100%"}>
@@ -62,6 +68,7 @@ const BlogCard = (props: BlogCardProps) => {
                 <Box>
                   <BlogTags tags={props.tags} />
                 </Box>
+                <Divider mt={"5px"} />
                 <Box mt={"10px"}>
                   <Text
                     textDecoration="none"
@@ -71,6 +78,7 @@ const BlogCard = (props: BlogCardProps) => {
                     lineHeight={"1.2"}
                     fontWeight={700}
                     noOfLines={1}
+                    textTransform={"capitalize"}
                     _hover={{ textDecoration: "none" }}
                   >
                     {props.title}
@@ -97,6 +105,9 @@ const BlogCard = (props: BlogCardProps) => {
                     debitis iure exercitationem, eligendi animi? Error.
                   </Text>
                 </Box>
+                <Button mt={4} rightIcon={<FaBlog />} variant={"link"}>
+                  Read More
+                </Button>
               </Box>
             </Stack>
           </Box>
