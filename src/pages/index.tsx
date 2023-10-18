@@ -7,7 +7,6 @@ import Hero from "@/components/UI/Hero";
 import LatestArticle from "@/components/UI/LatestArticle";
 import Portfolio from "@/components/UI/Portfolio";
 import Services from "@/components/UI/Services";
-import Stats from "@/components/stats/Stats";
 import Customlayout from "@/layouts/Customlayout";
 import { useToken } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
@@ -36,10 +35,9 @@ export default function Home() {
       ) : (
         <Customlayout>
           <Hero />
-          <Banner />
           <About />
           <Services />
-          <Stats />
+          <Banner />
           <Portfolio />
           <ChooseUs />
           <LatestArticle />
@@ -53,6 +51,7 @@ export default function Home() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              borderRadius: "4px",
             }}
           />
         </Customlayout>

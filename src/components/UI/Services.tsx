@@ -15,7 +15,7 @@ const Services = () => {
       id="#services"
     >
       <Stack align={"center"}>
-        <SectionTag title="our services" />
+        <SectionTag title="Our Services" />
         <Stack
           align={"center"}
           m={"auto"}
@@ -54,17 +54,17 @@ const Services = () => {
         </Stack>
         <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3 }} gap={5}>
           <CustomCard
-            imgSrc="/assets/oe.png"
+            imgSrc="/assets/oe2.png"
             heading="Operational Efficiency Optimization"
             description="We specialize in optimizing operations for enhanced productivity and cost savings."
           />
           <CustomCard
-            imgSrc="/assets/sp.png"
+            imgSrc="/assets/sp2.png"
             heading="Strategic Planning and Advisory"
             description="We offer expert guidance in developing comprehensive strategic plans that align with a company's goals."
           />
           <CustomCard
-            imgSrc="/assets/mr.png"
+            imgSrc="/assets/mr2.png"
             heading="Market Research and Analysis"
             description="Oxbourn Consulting delivers data-driven insights for smart decision-making and effective marketing."
           />
