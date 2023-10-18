@@ -218,6 +218,7 @@ export default function WithSubnavigation() {
         </Flex>
         <Button
           as={"a"}
+          rounded={"sm"}
           display={{ base: "none", md: "inline-flex", lg: "inline-flex" }}
           fontSize={"16px"}
           fontWeight={600}
@@ -621,39 +622,8 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Find Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
-  },
-  {
-    label: "Overview",
-    children: [
-      {
-        label: "About us",
-        subLabel: "About oxbourn consulting",
-        href: "#about",
-      },
-      {
-        label: "Achievments",
-        subLabel: "Number overview",
-        href: "#qo",
-      },
-      {
-        label: "Why Oxbourn",
-        subLabel: "Why patner with us",
-        href: "#whyoxbourn",
-      },
-    ],
+    label: "About us",
+    href: "#about",
   },
   {
     label: "Services",
@@ -666,5 +636,20 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Blog",
     href: "#singleblog",
+  },
+  {
+    label: "Overview",
+    children: [
+      {
+        label: "Achievments",
+        subLabel: "Number overview",
+        href: "#qo",
+      },
+      {
+        label: "Why Oxbourn",
+        subLabel: "Why patner with us",
+        href: "#whyoxbourn",
+      },
+    ],
   },
 ];

@@ -5,11 +5,9 @@ import BlogCard from "../blog/BlogCard";
 
 const LatestArticle = () => {
   return (
-    <PrimaryContainer
-      id="#singleblog"
-    >
+    <PrimaryContainer id="#singleblog">
       <Stack m={"auto"} mb={5} alignItems={"center"}>
-        <SectionTag title="latest blog posts" />
+        <SectionTag title="Latest Posts" />
       </Stack>
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3 }}

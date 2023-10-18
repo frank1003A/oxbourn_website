@@ -83,7 +83,7 @@ const Portfolio = () => {
       id="#portfolio"
     >
       <Stack align={"center"} m={"auto"} textAlign={"center"} mb={"35px"}>
-        <SectionTag title="portfolio" />
+        <SectionTag title="Portfolio" />
         <Box data-aos="zoom-in-up">
           <Heading
             fontSize={{ base: 25, sm: 25, md: 36, lg: 36 }}
