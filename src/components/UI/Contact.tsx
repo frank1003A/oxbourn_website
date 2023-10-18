@@ -25,7 +25,9 @@ const Contact = () => {
       id="#contact"
     >
       <Stack align={"center"}>
-        <SectionTag title="contact" />
+        <Box mb={"10px"}>
+          <SectionTag title="Contact" />
+        </Box>
         <Flex
           direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
           gap={"2rem"}
@@ -60,10 +62,10 @@ const Contact = () => {
             </Heading>
             <Center>
               <Image
-                src="chat_kioqvg.svg"
+                src="cu1_mo9ari.svg"
                 alt="contact-us-image"
-                height={168}
-                width={168}
+                height={400}
+                width={400}
               />
             </Center>
           </Box>
@@ -115,6 +117,7 @@ const Contact = () => {
               <Box>
                 <CustomBtn
                   transition=".3s"
+                  rounded={"sm"}
                   _hover={{
                     transform: "translateY(-5px)",
                     boxShadow: "0 4px 4px 0 rgba(0, 0, 0, 0.2)",

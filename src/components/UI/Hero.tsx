@@ -2,7 +2,6 @@ import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
 import CustomBtn from "../CustomBtn";
 import HeroBox from "../HeroBox";
-import SectionTag from "../SectionTag";
 
 export default function Hero() {
   return (
@@ -65,7 +64,19 @@ export default function Hero() {
           zIndex={10}
           data-aos="fade-up"
         >
-          <SectionTag title="welcome to oxbourn consulting" />
+          <Box
+            rounded={"sm"}
+            bg={"brand.primary"}
+            p={"10px"}
+            color={"brand.primary"}
+            border={1}
+            borderStyle={"solid"}
+            borderColor={"white"}
+          >
+            <Text fontFamily={"inherit"} fontWeight={600} color={"white"}>
+              Welcome to oxbourn consulting
+            </Text>
+          </Box>
           <Heading
             fontFamily={"inherit"}
             fontWeight={600}
@@ -105,7 +116,7 @@ export default function Hero() {
           >
             <CustomBtn
               bg={"brand.primary"}
-              rounded={"md"}
+              rounded={"sm"}
               padding={"16px 34px 16px 28px"}
               marginRight={"10px"}
               height={"auto"}

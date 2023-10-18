@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { ReactNode } from "react";
-import { BiMailSend, BiSolidBriefcase } from "react-icons/bi";
+import { BiMailSend } from "react-icons/bi";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const SocialButton = ({
@@ -106,9 +106,6 @@ export default function LargeWithNewsletter() {
                   gap={"5px"}
                   fontSize={"40px"}
                 >
-                  <Box as={"span"} color={"white"}>
-                    <BiSolidBriefcase />
-                  </Box>
                   <Heading fontFamily={"inherit"} fontWeight={600}>
                     Oxbourn
                   </Heading>
