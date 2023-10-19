@@ -8,6 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 import { BiSolidCheckCircle } from "react-icons/bi";
 import PrimaryContainer from "../PrimaryContainer";
 import SectionTag from "../SectionTag";
@@ -16,6 +17,7 @@ const About = () => {
   return (
     <PrimaryContainer
       id="#about"
+      name="about"
       bgImage={"url('/assets/footer.png')"}
       bgRepeat={"no-repeat"}
       bgSize={"center"}
@@ -38,7 +40,7 @@ const About = () => {
           >
             <Center w={"100%"}>
               <Image
-                src={"aboutus_o8vvqa.svg"}
+                src={"aup_af8ost.png"}
                 alt="about-us-image"
                 height={450}
                 width={450}
@@ -103,6 +105,7 @@ const About = () => {
             >
               <Flex
                 align={"center"}
+                justifyItems={"center"}
                 gap={"10px"}
                 data-aos="fade-up"
                 data-aos-delay="2"
@@ -110,10 +113,11 @@ const About = () => {
                 <Box as={"span"} fontSize={"2em"} color={"brand.primary"}>
                   <BiSolidCheckCircle />
                 </Box>{" "}
-                <Text>Enhanced Operational Efficiency and Performance.</Text>
+                <Text>Operational Efficiency and Performance.</Text>
               </Flex>
               <Flex
                 align={"center"}
+                justifyItems={"center"}
                 gap={"10px"}
                 data-aos="fade-up"
                 data-aos-delay="4"
@@ -125,6 +129,7 @@ const About = () => {
               </Flex>
               <Flex
                 align={"center"}
+                justifyItems={"center"}
                 gap={"10px"}
                 data-aos="fade-up"
                 data-aos-delay="6"
@@ -135,27 +140,29 @@ const About = () => {
                 <Text>Strategic Clarity and Direction</Text>
               </Flex>
             </Stack>
-            <Button
-              colorScheme={"orange"}
-              bg={"brand.primary"}
-              rounded={"sm"}
-              padding={"16px 34px 16px 28px"}
-              marginRight={"10px"}
-              mt={{ base: "25px", sm: "25px", md: "25px", lg: "25px" }}
-              height={"auto"}
-              fontWeight={500}
-              bottom={"0px"}
-              transition=".3s"
-              _hover={{
-                transform: "translateY(-5px)",
-                boxShadow: "0 4px 4px 0 rgba(0, 0, 0, 0.2)",
-              }}
-              _focus={{
-                outline: "none",
-              }}
-            >
-              About us
-            </Button>
+            <Link href="/about">
+              <Button
+                colorScheme={"orange"}
+                bg={"brand.primary"}
+                rounded={"sm"}
+                padding={"16px 34px 16px 28px"}
+                marginRight={"10px"}
+                mt={{ base: "25px", sm: "25px", md: "25px", lg: "25px" }}
+                height={"auto"}
+                fontWeight={500}
+                bottom={"0px"}
+                transition=".3s"
+                _hover={{
+                  transform: "translateY(-5px)",
+                  boxShadow: "0 4px 4px 0 rgba(0, 0, 0, 0.2)",
+                }}
+                _focus={{
+                  outline: "none",
+                }}
+              >
+                About us
+              </Button>
+            </Link>
           </Stack>
         </Flex>
       </Stack>

@@ -19,6 +19,7 @@ const ChooseUs = () => {
       px={{ base: 5, md: 20, xl: 32, lg: 16 }} */
       bgColor={"#ebeaf9"}
       id="#whyoxbourn"
+      name="whychooseus"
     >
       <Stack align={"center"}>
         <Flex
@@ -32,7 +33,7 @@ const ChooseUs = () => {
           >
             <Center>
               <Image
-                src="whyus_tf6hxt.svg"
+                src="whyus_mi0ak2.png"
                 alt="choose-us-image"
                 height={500}
                 width={500}
@@ -100,6 +101,7 @@ const ChooseUs = () => {
             >
               <Flex
                 align={"center"}
+                justifyItems={"center"}
                 gap={"10px"}
                 data-aos="fade-right"
                 data-aos-delay="0"
@@ -111,17 +113,7 @@ const ChooseUs = () => {
               </Flex>
               <Flex
                 align={"center"}
-                gap={"10px"}
-                data-aos="fade-right"
-                data-aos-delay="1"
-              >
-                <Box as={"span"} fontSize={"2em"} color={"#FF6305"}>
-                  <BiSolidCheckCircle />
-                </Box>
-                <Text>Online strategy and consulting services.</Text>
-              </Flex>
-              <Flex
-                align={"center"}
+                justifyItems={"center"}
                 gap={"10px"}
                 data-aos="fade-right"
                 data-aos-delay="2"
@@ -129,10 +121,11 @@ const ChooseUs = () => {
                 <Box as={"span"} fontSize={"2em"} color={"#E53F5D"}>
                   <BiSolidCheckCircle />
                 </Box>{" "}
-                <Text>Our approach is designed to help the businesses.</Text>
+                <Text>Designed to help the businesses.</Text>
               </Flex>
               <Flex
                 align={"center"}
+                justifyItems={"center"}
                 gap={"10px"}
                 data-aos="fade-right"
                 data-aos-delay="2"
