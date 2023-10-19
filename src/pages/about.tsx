@@ -140,7 +140,7 @@ const AboutPage = () => {
                   fontSize={{ base: 25, sm: 25, md: 25 }}
                   {...headingProps}
                 >
-                  Our Commitment to Excellence
+                  Commitment to Excellence
                 </Heading>
                 <Box data-aos="fade-up" data-aos-delay="0">
                   <Text

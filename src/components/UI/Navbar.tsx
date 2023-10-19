@@ -143,6 +143,7 @@ export default function WithSubnavigation() {
           pos={"relative"}
         >
           <IconButton
+            rounded={"sm"}
             onClick={onToggle}
             color={"white"}
             bgColor={"brand.primary"}

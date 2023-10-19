@@ -28,6 +28,7 @@ const About = () => {
           direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
           gap={{ base: "0px", sm: "0px", md: "2rem", lg: "2rem" }}
           h={"100%"}
+          pos={"relative"}
         >
           <Box
             w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}
@@ -53,7 +54,7 @@ const About = () => {
             align={{
               base: "flex-start",
               sm: "flex-start",
-              md: "center",
+              md: "flex-start",
               lg: "flex-start",
             }}
             height={"auto"}

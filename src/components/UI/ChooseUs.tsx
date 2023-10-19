@@ -30,6 +30,7 @@ const ChooseUs = () => {
             w={{ base: "100%", md: "100%", lg: "50%" }}
             h={"100%"}
             data-aos="zoom-in-up"
+            pos={"relative"}
           >
             <Center>
               <Image
@@ -46,7 +47,7 @@ const ChooseUs = () => {
             align={{
               base: "flex-start",
               sm: "flex-start",
-              md: "center",
+              md: "flex-start",
               lg: "flex-start",
             }}
             height={"auto"}

@@ -38,6 +38,7 @@ const Contact = () => {
             w={{ base: "100%", md: "100%", lg: "50%" }}
             h={"100%"}
             data-aos="zoom-in-up"
+            pos={"relative"}
           >
             <Heading
               color={"brand.heading"}
@@ -70,7 +71,7 @@ const Contact = () => {
               />
             </Center>
           </Box>
-          <Stack w={{ base: "100%", sm: "100%", md: "50%", lg: "50%" }}>
+          <Stack w={{ base: "100%", sm: "100%", md: "100%", lg: "50%" }}>
             <Stack
               h={"100%"}
               gap={"1rem"}

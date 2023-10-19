@@ -61,8 +61,8 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 export default function LargeWithNewsletter() {
   return (
     <Box
-      bg={useColorModeValue("brand.footer", "gray.900")}
-      color={useColorModeValue("white", "gray.200")}
+      bg={"brand.footer"}
+      color={"white"}
       bgImage={"/assets/footer.png"}
       bgPos={"center"}
       bgRepeat={"no-repeat"}
@@ -74,18 +74,18 @@ export default function LargeWithNewsletter() {
           <Stack direction={"row"} w={{ sm: "100%", md: "auto" }}>
             <Input
               placeholder={"Your email address"}
-              bg={useColorModeValue("whiteAlpha.300", "whiteAlpha.100")}
+              bg={"whiteAlpha.300"}
               border={1}
               borderStyle={"solid"}
-              borderColor={"brand.primary"}
+              focusBorderColor="white"
               _focus={{
                 bg: "whiteAlpha.300",
               }}
             />
             <IconButton
               colorScheme={"orange"}
-              bg={useColorModeValue("brand.primary", "green.800")}
-              color={useColorModeValue("white", "gray.800")}
+              bg={"white"}
+              color={"brand.primary"}
               aria-label="Subscribe"
               icon={<BiMailSend />}
             />
@@ -141,9 +141,6 @@ export default function LargeWithNewsletter() {
             <Box as="a" href={"#"}>
               Pricing
             </Box>
-            <Box as="a" href={"#"}>
-              Testimonials
-            </Box>
           </Stack>
           <Stack align={{ sm: "center", md: "flex-start" }}>
             <ListHeader>Support</ListHeader>
@@ -158,9 +155,6 @@ export default function LargeWithNewsletter() {
             </Box>
             <Box as="a" href={"#"}>
               Privacy Policy
-            </Box>
-            <Box as="a" href={"#"}>
-              Satus
             </Box>
           </Stack>
         </SimpleGrid>

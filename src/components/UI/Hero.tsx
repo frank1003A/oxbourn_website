@@ -86,14 +86,21 @@ export default function Hero() {
               color={"white"}
             >
               <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Welcome to oxbourn consulting")
+                    .pauseFor(2500)
+                    .start();
+                }}
+              />
+              {/**<Typewriter
                 options={{
                   strings: ["Welcome to oxbourn consulting"],
                   autoStart: true,
-                  loop: true,
+                  loop: false,
                   skipAddStyles: true,
-                  deleteSpeed: "natural",
                 }}
-              />
+              /> */}
             </Box>
           </Box>
           <Heading
