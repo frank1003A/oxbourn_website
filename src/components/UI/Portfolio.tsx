@@ -141,7 +141,6 @@ const Portfolio = () => {
         spacing={"2rem"}
         transition={"transform 0.3s ease-in-out"}
         id="chakra-grid"
-        data-aos="zoom-in-up"
       >
         {gridComponent}
       </SimpleGrid>
