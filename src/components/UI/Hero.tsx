@@ -79,10 +79,10 @@ export default function Hero() {
             borderStyle={"solid"}
             borderColor={"white"}
           >
-            <Text
+            <Box
               fontFamily={"inherit"}
               fontWeight={600}
-              transition={".5s"}
+              transition={".3s"}
               color={"white"}
             >
               <Typewriter
@@ -91,9 +91,10 @@ export default function Hero() {
                   autoStart: true,
                   loop: true,
                   skipAddStyles: true,
+                  deleteSpeed: "natural",
                 }}
               />
-            </Text>
+            </Box>
           </Box>
           <Heading
             fontFamily={"inherit"}

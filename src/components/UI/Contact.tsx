@@ -90,17 +90,32 @@ const Contact = () => {
               >
                 <FormControl>
                   <FormLabel htmlFor="name">name</FormLabel>
-                  <Input id="name" placeholder="name" borderRadius={5} />
+                  <Input
+                    id="name"
+                    placeholder="name"
+                    borderRadius={5}
+                    focusBorderColor="brand.primary"
+                  />
                 </FormControl>
                 <FormControl>
                   <FormLabel htmlFor="surname">surname</FormLabel>
-                  <Input id="surname" placeholder="surname" borderRadius={5} />
+                  <Input
+                    id="surname"
+                    placeholder="surname"
+                    borderRadius={5}
+                    focusBorderColor="brand.primary"
+                  />
                 </FormControl>
               </Stack>
               <Box>
                 <FormControl>
                   <FormLabel htmlFor="email">email</FormLabel>
-                  <Input id="email" placeholder="email" borderRadius={5} />
+                  <Input
+                    id="email"
+                    placeholder="email"
+                    borderRadius={5}
+                    focusBorderColor="brand.primary"
+                  />
                 </FormControl>
               </Box>
               <Box>
@@ -112,6 +127,7 @@ const Contact = () => {
                     size="sm"
                     maxBlockSize={5}
                     borderRadius={5}
+                    focusBorderColor="brand.primary"
                   />
                 </FormControl>
               </Box>
