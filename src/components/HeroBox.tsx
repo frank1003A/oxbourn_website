@@ -12,9 +12,9 @@ const HeroBox = () => {
         transition={".5s"}
         h={"200px"}
         w={{ base: "100%", sm: "100%", md: "200px", lg: "200px" }}
-        bgColor={"white"}
+        bgColor={"whiteAlpha.300"}
         cursor={"pointer"}
-        color={"brand.primary"}
+        color={"white"}
         _hover={{
           bgColor: "black",
           color: "white",
@@ -81,9 +81,9 @@ const HeroBox = () => {
         h={"200px"}
         w={{ base: "100%", sm: "100%", md: "200px", lg: "200px" }}
         transition={".5s"}
-        bgColor={"white"}
+        bgColor={"whiteAlpha.300"}
         cursor={"pointer"}
-        color={"brand.primary"}
+        color={"white"}
         _hover={{
           bgColor: "black",
           color: "white",

@@ -1,8 +1,18 @@
-import { Box, Flex, Stack, Text } from "@chakra-ui/react";
+import { Box, Tag } from "@chakra-ui/react";
 
 const SectionTag = ({ title }: { title: string }) => {
   return (
-    <Box color={"white"} p={"4px 0px"} mb={"5px"}>
+    <Box color={"white"} p={"0px"} mb={"5px"} bgColor={"brand.primary"}>
+      <Tag size={"md"} rounded={"sm"} variant="solid" bgColor={"brand.primary"}>
+        {title}
+      </Tag>
+    </Box>
+  );
+};
+
+export default SectionTag;
+
+/** <Box color={"white"} p={"4px 0px"} mb={"5px"}>
       <Stack gap={"5px"}>
         <Text
           as={"span"}
@@ -23,8 +33,8 @@ const SectionTag = ({ title }: { title: string }) => {
             backgroundSize: "100% 100%",
             backgroundPosition: "0% 100%",
             transition: "all .7s, backgroundPosition .5s ease-in-out",
-          }}
-        >
+          }} 
+          >
           {title}
         </Text>
         <Flex>
@@ -37,7 +47,7 @@ const SectionTag = ({ title }: { title: string }) => {
           <Box
             w={"50%"}
             borderBottom={5}
-            borderBottomColor={"orange"}
+            borderBottomColor={"brand.primary"}
             borderBottomStyle={"solid"}
           ></Box>
           <Box
@@ -48,8 +58,4 @@ const SectionTag = ({ title }: { title: string }) => {
           ></Box>
         </Flex>
       </Stack>
-    </Box>
-  );
-};
-
-export default SectionTag;
+    </Box> */
