@@ -5,7 +5,7 @@ import BlogCard from "../blog/BlogCard";
 
 const LatestArticle = () => {
   return (
-    <PrimaryContainer id="#singleblog">
+    <PrimaryContainer id="#singleblog" name="latestposts">
       <Stack m={"auto"} mb={5} alignItems={"center"}>
         <SectionTag title="Latest Posts" />
       </Stack>

@@ -23,6 +23,7 @@ const Contact = () => {
       bgRepeat={"no-repeat"}
       bgColor={"#ebeaf9"}
       id="#contact"
+      name="contactus"
     >
       <Stack align={"center"}>
         <Box mb={"10px"}>
@@ -62,7 +63,7 @@ const Contact = () => {
             </Heading>
             <Center>
               <Image
-                src="cu1_mo9ari.svg"
+                src="cu2_k9scx6.png"
                 alt="contact-us-image"
                 height={400}
                 width={400}

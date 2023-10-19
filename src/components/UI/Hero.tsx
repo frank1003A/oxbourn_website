@@ -1,5 +1,6 @@
 import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 import CustomBtn from "../CustomBtn";
 import HeroBox from "../HeroBox";
 
@@ -12,6 +13,11 @@ export default function Hero() {
         paddingInline={"0px"}
         maxW={"none"}
         w={"100%"}
+        //bgGradient="linear-gradient(228deg, rgba(185, 227, 237, 1) 14%, rgba(255, 255, 255, 1) 100%)"
+        /** bgColor="#2876f9"
+        bgGradient="linear-gradient(315deg, #2876f9 0%, #6d17cb 74%)" */
+        // bgColor="#2a52be"
+        //bgGradient="linear-gradient(315deg, #2234ae 0%, #191714 74%)"
         bgColor={"brand.primary"}
         bgImage={"url('/assets/footer.png')"}
         bgRepeat={"no-repeat"}
@@ -73,8 +79,20 @@ export default function Hero() {
             borderStyle={"solid"}
             borderColor={"white"}
           >
-            <Text fontFamily={"inherit"} fontWeight={600} color={"white"}>
-              Welcome to oxbourn consulting
+            <Text
+              fontFamily={"inherit"}
+              fontWeight={600}
+              transition={".5s"}
+              color={"white"}
+            >
+              <Typewriter
+                options={{
+                  strings: ["Welcome to oxbourn consulting"],
+                  autoStart: true,
+                  loop: true,
+                  skipAddStyles: true,
+                }}
+              />
             </Text>
           </Box>
           <Heading
@@ -134,7 +152,7 @@ export default function Hero() {
               Get Started
             </CustomBtn>
             <Button
-              rounded={"md"}
+              borderRadius={"sm"}
               padding={"16px 34px 16px 28px"}
               marginRight={"10px"}
               height={"auto"}
