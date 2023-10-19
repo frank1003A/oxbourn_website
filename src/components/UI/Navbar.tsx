@@ -205,6 +205,7 @@ export default function WithSubnavigation() {
           pos={"relative"}
         >
           <IconButton
+            rounded={"sm"}
             onClick={onToggle}
             color={"white"}
             bgColor={"brand.primary"}
@@ -228,7 +229,6 @@ export default function WithSubnavigation() {
           bg={"white"}
           border={"1px"}
           borderColor={"brand.primary"}
-          borderRadius={5}
           transition={".3s"}
           href={"#contact"}
           onClick={() => handleClickScroll("#contact")}

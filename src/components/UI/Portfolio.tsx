@@ -66,8 +66,8 @@ const Portfolio = () => {
         .map((pl) => {
           return (
             <PortfolioCard
-              key={pl.img}
               img={pl.img}
+              key={pl.img}
               category={pl.category}
               alt={pl.alt}
             />
@@ -81,6 +81,7 @@ const Portfolio = () => {
       /**py={{ base: 5, md: 20, lg: "65px" }}
       px={{ base: 5, sm: 5, md: 10, xl: 32, lg: 16 }} */
       id="#portfolio"
+      name="portfolio"
     >
       <Stack align={"center"} m={"auto"} textAlign={"center"} mb={"35px"}>
         <SectionTag title="Portfolio" />
@@ -140,6 +141,7 @@ const Portfolio = () => {
         spacing={"2rem"}
         transition={"transform 0.3s ease-in-out"}
         id="chakra-grid"
+        data-aos="zoom-in-up"
       >
         {gridComponent}
       </SimpleGrid>
